@@ -5,7 +5,7 @@ export const navItems = [
   { href: "/career", label: "Career" },
   { href: "/inventions", label: "Inventions" },
   { href: "/skilldna", label: "SkillDNA" },
-  { href: "/press", label: "Press & Media", disabled: true },
+  { href: "/press", label: "Press & Media" },
   { href: "/contact", label: "Contact", disabled: true },
 ];
 
