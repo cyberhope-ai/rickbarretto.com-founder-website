@@ -25,6 +25,7 @@ export type Company = {
   moreImagesUrl?: string;
   websiteUrl?: string;
   exitNote?: string;
+  story?: string;
   cta?: { label: string; url: string; placement?: "header" | "details" };
 };
 
@@ -38,7 +39,9 @@ export const companies: Company[] = [
     yearEnd: 2025,
     status: "acquired",
     description:
-      "Rick's career in business began in 1990 — first as a route technician, then as a salesperson at the company his family founded in 1977. After years of cold-calling every business in downtown Indianapolis, he earned Salesman of the Year across the Midwest for the digital healthcare-IT and medical-dictation division. He was then promoted to Lead Systems Analyst / MIS Engineer — a hybrid role where he both sold and designed the implementation and integration of medical dictation and transcription systems for hospitals and medical facilities across the region. He integrated product lines including Dolby Stat Report and SONY / Philips / DVI / RTAS digital dictation hardware, and wrote the HL7 interfaces that linked their PC-based systems to the mainframes of the day — work at the dawn of the electronic patient record and electronic signature, branded internally as DocView. Years later the family business was sold to a private equity firm, and in 2025 was acquired by Valsoft Corporation alongside iRecord.",
+      "Rick's first job, 1990: his dad handed the nerdy programmer fresh out of college a stack of business cards and said \u201Ccold-call every business downtown Indianapolis \u2014 we\u2019ll review them every night.\u201D Those terrifying early days of \u201CNo Soliciting\u201D signs and learning to think on your feet became the foundation of a 35-year serial-entrepreneur career. He rose to Salesman of the Year across the Midwest and then Lead Systems Analyst / MIS Engineer \u2014 designing healthcare-IT and medical-dictation integrations at the dawn of the electronic patient record. Family company founded 1977; acquired by Valsoft (2025) alongside iRecord.",
+    story:
+      "The first job my dad gave a nerdy programmer/inventor coming out of college was a stack of business cards with the training of \"go cold call every business downtown Indianapolis, ask for the CEO or owner, and every day after work we'll review them and do next steps.\" Those early terrifying days of seeing \"No Soliciting\" signs and learning to think on your feet — learning to talk to people — helped me in business (thanks to my dad) for every year of my career as a serial entrepreneur. It should be a required activity for ALL kids out of college who want to be entrepreneurs. That's where it starts to get real.",
     highlights: {
       customers: [
         "Hospitals + medical facilities across the Midwest",

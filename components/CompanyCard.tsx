@@ -129,6 +129,16 @@ export default function CompanyCard({ c }: { c: Company }) {
               ▶ {c.cta.label}
             </a>
           )}
+          {c.story && (
+            <div className="bg-white border-l-4 border-blue-700 rounded-r-lg p-5 md:p-6 shadow-sm">
+              <p className="text-xs font-semibold tracking-widest uppercase text-blue-700 mb-2">
+                In Rick&rsquo;s words
+              </p>
+              <p className="font-display italic text-slate-800 text-base md:text-lg leading-relaxed">
+                &ldquo;{c.story}&rdquo;
+              </p>
+            </div>
+          )}
           <DetailBlock label="Customers Served" items={c.highlights.customers} />
           <DetailBlock label="Products / Offerings" items={c.highlights.products} />
 
