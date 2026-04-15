@@ -145,15 +145,41 @@ export const pressSections: PressSection[] = [
 
       // DreamTrust brand (parent co)
       { videoId: "IIKAuWppL4k", title: "FOX WXIN — Rick Barretto on Licensed IZOD Product Line", subtitle: "DreamTrust Corporation" },
+      // Additional Angie's List coverage — Rick interview cut
+      { videoId: "yD7mnBtqe3M", title: "Angie's List loves DreamAuthentics Retro Arcades — Rick Barretto interview", subtitle: "Angie's List" },
     ],
   },
   {
     companyId: "video-game-palooza",
     company: "Video Game Palooza",
     summary:
-      "Coverage around the Charity Arcade program, Create-and-Play Camps, and the 501(c)(3)'s community impact. Additional archive forthcoming.",
+      "VGP's YouTube channel mixes the Charity Arcade at Indiana State Museum (first in the country), Create-and-Play Camps media coverage, Rick's retro-collector work as VGP co-founder, and a deep Diablo Immortal / Yu-Gi-Oh game-content series produced under the VGP banner.",
     press: [],
-    videos: [],
+    videos: [
+      // Charity Arcade — Indiana State Museum (first in the country)
+      { videoId: "-KDBYBmnKDo", title: "VGP Charity Arcade at the Indiana State Museum — first in the Country!", subtitle: "Launch clip" },
+      { videoId: "wwaZIdKmgDk", title: "Charity Arcade Debut at Indiana State Museum — WISH TV Channel 8", subtitle: "Channel 8" },
+      { videoId: "8GetGlk5ksc", title: "Rick Barretto — Retro Arcade Collector interview at Indiana State Museum", subtitle: "CBS Indianapolis" },
+      { videoId: "ctBP7JVPgr4", title: "Rick Barretto — Retro Arcade interview (Part 2) at Indiana State Museum", subtitle: "Indiana State Museum" },
+      { videoId: "2mabyf18fmg", title: "Cara Barretto — Channel 8 CBS at Indiana State Museum Charity Arcade", subtitle: "Channel 8 CBS" },
+
+      // Create and Play Camps
+      { videoId: "eLjJ6q4Q8OE", title: "Create and Play Camps — Channel 13 Summer Coding Camps for kids", subtitle: "Channel 13" },
+      { videoId: "B9SCwvgkJok", title: "Create and Play Camps", subtitle: "Program overview" },
+
+      // Rick as VGP co-founder / retro collector
+      { videoId: "kEi74Q7_zuk", title: "VGP co-founder + retro game collector — creator of DreamAuthentics since 1999", subtitle: "About Rick" },
+
+      // Diablo Immortal / game-content series (produced under VGP banner)
+      { videoId: "GxUnBX9V-H0", title: "Diablo Immortal BG Date Night — Empress Reign / Ninja Fortnite / esports", subtitle: "Diablo Immortal series" },
+      { videoId: "fccR5x28_eM", title: "Diablo Immortal BG Date Night — Ascension Clan: Helene PvP + Battlegrounds", subtitle: "Diablo Immortal series" },
+      { videoId: "pweegJnqx2g", title: "Diablo Immortal — Castle Cyrangar solo defense gets HACKED by my warband", subtitle: "Diablo Immortal series" },
+      { videoId: "CG_EVXKwMR4", title: "Diablo Immortal — Predatory Monetization Discussion with Roblox Game Dev", subtitle: "Microtransactions · long-form" },
+      { videoId: "ox3poLH_DIY", title: "Smart Investing in Legendary Gems — Frozen Heart Level 10 Upgrade Tips", subtitle: "Diablo Immortal · strategy" },
+      { videoId: "XHF9Q6gNHgw", title: "Smart Investing in Legendary Gems — Diablo Immortal", subtitle: "Diablo Immortal · strategy" },
+      { videoId: "5wijtVVAzGg", title: "Diablo Immortal GPU Tech Tips and Cheating Orbs", subtitle: "Diablo Immortal · deep dive" },
+      { videoId: "bL31WafO0l0", title: "Diablo Immortal — FIX for PC Connection Issues", subtitle: "Diablo Immortal · technical" },
+    ],
   },
   {
     companyId: "hope-training-academy",
@@ -191,6 +217,25 @@ export const pressSections: PressSection[] = [
       { videoId: "wRuarukPGJs", title: "Thriving During Uncertain Times — Panel Discussion", subtitle: "HTA Live" },
       { videoId: "2YgPC_6c1wM", title: "May The 4th Be With You — Star Wars life lessons for education", subtitle: "HTA special" },
       { videoId: "PG7l_pgnYzk", title: "Rick + Cara Update and GoFundMe Charity Contest", subtitle: "Community update" },
+
+      // ——— Additional HTA content from VGP channel ———
+      { videoId: "yTDosGmYFkI", title: "HTA Introduction — Executive Director Sarah Zike on services", subtitle: "Sarah Zike" },
+      { videoId: "eI6u2-BZInc", title: "HTA Virtual Learning Platform Overview", subtitle: "Platform tour" },
+      { videoId: "ayAMxDPdLGo", title: "Enroll in our entry-level CyberSecurity pre-apprenticeship", subtitle: "Enrollment promo" },
+      { videoId: "HMEiJN_5Zx8", title: "New IT / CyberSecurity Job — our Apprentice program (no 4-year degree)", subtitle: "Workforce" },
+      { videoId: "_nA9Df3j8wE", title: "Google — new hires don't require a college degree. Apprenticeships work", subtitle: "Industry evidence" },
+
+      // CompTIA instructional
+      { videoId: "F245jQ8Qv7Q", title: "CompTIA A+ — Storage Overview", subtitle: "Online instruction" },
+      { videoId: "wQH3oIWYTbo", title: "CompTIA A+ — Networking Introduction", subtitle: "Online instruction" },
+
+      // Student success
+      { videoId: "-iP3UX6n47w", title: "Dej Afuye — CompTIA A+ Student Success Story", subtitle: "Student testimonial (long-form)" },
+      { videoId: "yUWovI1sSH0", title: "Niyat Tesfatsion — CyberSecurity Apprentice at VGP/HTA", subtitle: "Apprentice testimonial" },
+      { videoId: "b0Yo32DL8vQ", title: "Jared Giddens — IT + CyberSecurity Apprentice at VGP/HTA", subtitle: "Apprentice testimonial" },
+
+      // Career advice
+      { videoId: "NJ7bcwz4LRw", title: "CJ Oyer — Roblox Game Dev + Entrepreneur career advice", subtitle: "Career advice · Roblox" },
     ],
   },
   {
@@ -202,7 +247,14 @@ export const pressSections: PressSection[] = [
       { publication: "Indianapolis Business Journal — COVER", tier: "tier1", note: "December 4–10, 2017 — Esports Explode" },
       { publication: "Hamilton County Reporter", tier: "regional", note: "Mayor Cook + Game On launch" },
     ],
-    videos: [],
+    videos: [
+      { videoId: "NhRa1nr9VPM", title: "Game On — where esports meets education", subtitle: "VGP × Game On" },
+      // Yu-Gi-Oh tournament series at Game On Events (September 2023)
+      { videoId: "sy7Xs_D4s7w", title: "Yu-Gi-Oh Card Opening — Ep 1 · Game On Events Tournament", subtitle: "September 2023" },
+      { videoId: "C5Ho9pVBDXQ", title: "Yu-Gi-Oh Card Opening — Ep 2 · Game On Events Tournament", subtitle: "September 2023" },
+      { videoId: "reYrDtNjWRE", title: "Yu-Gi-Oh Card Opening — Ep 3", subtitle: "Game On Events" },
+      { videoId: "ZAUVNeiTuVU", title: "Yu-Gi-Oh Card Opening — Ep 4", subtitle: "Game On Events" },
+    ],
   },
   {
     companyId: "irecord",
