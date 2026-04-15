@@ -1,5 +1,14 @@
 import Nav from "@/components/Nav";
+import Lightbox from "@/components/Lightbox";
 import type { Metadata } from "next";
+
+const screenshots = [
+  { src: "/skilldna/skilldna-01.jpg", caption: "Capability genome — top view" },
+  { src: "/skilldna/skilldna-02.jpg", caption: "Personality + leadership metrics" },
+  { src: "/skilldna/skilldna-03.jpg", caption: "Skill visualization breakdown" },
+  { src: "/skilldna/skilldna-04.jpg", caption: "Evidence layer + history" },
+  { src: "/skilldna/skilldna-05.jpg", caption: "Growth over time" },
+];
 
 export const metadata: Metadata = {
   title: "SkillDNA — The World's First Human Potential Dashboard",
@@ -85,35 +94,31 @@ export default function SkillDNAPage() {
           </div>
         </section>
 
-        {/* Screenshots (placeholder until real ones drop in) */}
+        {/* Screenshots */}
         <section className="px-6 py-14 md:py-16 bg-white border-b border-slate-200">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3 text-center">
               A peek at the build
             </p>
             <h2 className="font-display text-2xl md:text-4xl text-slate-900 mb-8 text-center leading-tight">
               Screenshots from the live app.
             </h2>
-            <div className="grid md:grid-cols-3 gap-4">
-              {[1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="aspect-[4/3] rounded-xl bg-gradient-to-br from-blue-50 via-slate-50 to-indigo-50 border-2 border-dashed border-blue-200 flex items-center justify-center text-center p-6"
-                >
-                  <div>
-                    <p className="font-display text-blue-700 text-lg mb-1">
-                      Screenshot {i}
-                    </p>
-                    <p className="font-sans text-xs text-slate-500">
-                      Coming as the app launches
-                    </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+              {screenshots.map((s, i) => (
+                <figure key={i} className="space-y-2">
+                  <div className="aspect-[16/10] rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <Lightbox src={s.src} alt={s.caption} />
                   </div>
-                </div>
+                  <figcaption className="font-sans text-sm text-slate-600 px-1">
+                    {s.caption}
+                  </figcaption>
+                </figure>
               ))}
             </div>
             <p className="text-center font-sans text-sm text-slate-500 mt-6">
-              Rick is currently developing the production app; real screenshots
-              will drop here as milestones land.
+              Click any screenshot to enlarge. The production app is under
+              active development — these views are from the simulated
+              reference build.
             </p>
           </div>
         </section>

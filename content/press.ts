@@ -89,8 +89,7 @@ export const pressSections: PressSection[] = [
       { publication: "The Today Show", tier: "tv" },
     ],
     videos: [
-      // Drop YouTube video IDs here as Rick finds them.
-      // Example: { videoId: "dQw4w9WgXcQ", title: "DreamAuthentics Katana — launch reel", subtitle: "2007" }
+      { videoId: "OmTOXL43dw4", title: "DreamAuthentics — archive footage", subtitle: "Original source; YouTube compression is lossy — higher-resolution originals will replace this." },
     ],
   },
   {
