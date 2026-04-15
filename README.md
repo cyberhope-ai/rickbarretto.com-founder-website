@@ -1,2 +1,2 @@
-# rickbarretto.com-founder-website-profile
+# rickbarretto.com-founder-website
 Rick Barretto Founder Website Profile
