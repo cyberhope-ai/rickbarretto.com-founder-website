@@ -3,7 +3,7 @@ import Link from "next/link";
 export const navItems = [
   { href: "/", label: "Overview" },
   { href: "/career", label: "Career" },
-  { href: "/innovations", label: "Innovations", disabled: true },
+  { href: "/inventions", label: "Inventions" },
   { href: "/skilldna", label: "SkillDNA", disabled: true },
   { href: "/press", label: "Press & Media", disabled: true },
   { href: "/contact", label: "Contact", disabled: true },

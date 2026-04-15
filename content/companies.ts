@@ -164,7 +164,7 @@ export const companies: Company[] = [
       products: [
         "iRecord Universe — standalone or multi-unit, enterprise-server-ready, 4TB HDD, optional RAID 1",
         "iRecord Enterprise",
-        "iRecord Live Conference (BlackBox) — SECURE on-premise conferencing, no internet required",
+        "iRecord Live Conference (BlackBox) — SECURE on-premise conferencing, powered by Jolt Video Live, no internet required",
         "Chain-of-custody evidence management",
         "One-touch recording: toggle/keyed/push-button (stainless or white)",
         "RTSP HD live monitoring, PIP with PIR sensor + thermostat camera",
@@ -452,6 +452,10 @@ export const companies: Company[] = [
         "Reference text for arcade enthusiasts and professionals",
       ],
     },
+    images: [
+      "/companies/game-on-publishing/book-cover.jpg",
+      "/companies/game-on-publishing/rick-author.jpg",
+    ],
     websiteUrl: "https://www.arcadeinventors.com/gameonpublishing",
   },
 
@@ -474,7 +478,7 @@ export const companies: Company[] = [
         "Esports record authorities (Esports World Records Live)",
       ],
       products: [
-        "iRecord LiveView — realtime SECURE law enforcement interview platform (created + invented)",
+        "iRecord LiveView / iRecord Live Conference (BlackBox) — realtime SECURE law enforcement interview platform (created + invented)",
         "HopeVideo — realtime video conferencing for education (created + invented)",
         "JVL Meetings — realtime virtual meetings + streaming platform (created + invented)",
         "Neurotrack Brain Training — realtime video API for competitive esports reaction-time training (created + invented)",
