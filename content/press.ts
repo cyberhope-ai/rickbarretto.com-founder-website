@@ -110,7 +110,11 @@ export const pressSections: PressSection[] = [
       { publication: "The Today Show", tier: "tv" },
     ],
     videos: [
-      // TV / national network features
+      // Start here — product overview + Angie's List (Rick's pick for lead)
+      { videoId: "TskuojFoi70", title: "What is a DreamAuthentics Arcade? Massive Fun!", subtitle: "Product overview · start here" },
+      { videoId: "QLDsVbWQ-E0", title: "Custom Arcades for your mancave — by Angie's List", subtitle: "Angie's List" },
+
+      // National TV
       { videoId: "eEZEXzdzHQ0", title: "WCBS-TV CBS New York Feature", subtitle: "CBS New York" },
       { videoId: "FOJCx-uYR9M", title: "E! Television — Money To Burn", subtitle: "E!" },
       { videoId: "QAz4wNWgEuc", title: "FOX Television Chicago", subtitle: "FOX Chicago" },
@@ -134,9 +138,7 @@ export const pressSections: PressSection[] = [
       { videoId: "gTQMw7unuYo", title: "DreamAuthentics at VGL Los Angeles", subtitle: "Video Games Live tour" },
       { videoId: "ssEHC7OdC_A", title: "DreamAuthentics at VGL Washington DC", subtitle: "Video Games Live tour" },
 
-      // Product features + awards + overviews
-      { videoId: "TskuojFoi70", title: "What is a DreamAuthentics Arcade? Massive Fun!", subtitle: "Product overview" },
-      { videoId: "QLDsVbWQ-E0", title: "Custom Arcades for your mancave — by Angie's List", subtitle: "Angie's List" },
+      // Product features + awards
       { videoId: "w6S9fn377Z8", title: "Wins ManiaTV's Holiday Geek Gift 2007", subtitle: "ManiaTV · 2007" },
       { videoId: "AOmpygoRwCQ", title: "DreamAuthentics game arriving at Mania TV", subtitle: "ManiaTV" },
       { videoId: "OmTOXL43dw4", title: "Popular Mechanics Review", subtitle: "Popular Mechanics" },
@@ -157,9 +159,39 @@ export const pressSections: PressSection[] = [
     companyId: "hope-training-academy",
     company: "Hope Training Academy",
     summary:
-      "Indiana-local press and U.S. Department of Labor partnership coverage around the nearly-2,000-Hoosier training program. Archive forthcoming.",
+      "HTA's YouTube channel hosts welcomes, promos, student + staff testimonials, and the pandemic-era live panels Rick + Cara hosted. The mission shows best in the voices of the nearly-2,000 Hoosiers who came through the program.",
     press: [],
-    videos: [],
+    videos: [
+      // Welcomes + tour
+      { videoId: "0q1-Uy_ARts", title: "Welcome to Hope Training Academy — 2023", subtitle: "Start here" },
+      { videoId: "f43qnKIriLQ", title: "Welcome to Hope Training Academy — 2021", subtitle: "2021" },
+      { videoId: "y2AlE2sPN8Y", title: "HTA Tour and Opportunity", subtitle: "Facility walkthrough" },
+
+      // Program promos
+      { videoId: "EouaO6ory88", title: "Student Dreams Fulfilled", subtitle: "Promo" },
+      { videoId: "bcskTTj5X64", title: "IT and Generations Latino", subtitle: "Promo" },
+      { videoId: "aV1pfkcJwGc", title: "Chelsea — Single Mom IT", subtitle: "Promo" },
+      { videoId: "bsetqsisiJg", title: "What does an IT Pro do?", subtitle: "Promo" },
+      { videoId: "ofADmQ_wPkQ", title: "Preparing IT Professionals", subtitle: "Promo" },
+      { videoId: "uA-bD03-fRE", title: "CompTIA Job Certification", subtitle: "Promo" },
+
+      // Student + staff testimonials (the core of the mission)
+      { videoId: "_GQh4apUpyQ", title: "Former Students Who Are Now Teachers", subtitle: "Student testimonials" },
+      { videoId: "jqWnaB2DfzU", title: "Students Who Are Now Teachers (short)", subtitle: "Student testimonials" },
+      { videoId: "TWnJZjULB6s", title: "Supporting Students", subtitle: "Student testimonials" },
+      { videoId: "X688BkOwdRI", title: "Supporting Students — Judy (Extended)", subtitle: "Student success" },
+      { videoId: "0P3W_MzqY5g", title: "Supporting Students — Marc (Dream Manager)", subtitle: "Student success" },
+      { videoId: "k68E5lc98Qk", title: "Interview 1 — Komen, CompTIA A+ Student", subtitle: "Student interview" },
+      { videoId: "gxwDjeoB4Tg", title: "Interview 2 — Robin, CompTIA A+ Student", subtitle: "Student interview" },
+      { videoId: "Ez9Rg7hwlE0", title: "Interview 3 — Jared, Cybersecurity Intern", subtitle: "Student interview" },
+      { videoId: "4lDqCIw5I1k", title: "Interview 4 — Niyat Tesfatsion", subtitle: "Student interview" },
+
+      // Panels + special events (Rick + Cara on camera)
+      { videoId: "SbXtXr3bC9c", title: "How to be a Superhero in Times of Chaos", subtitle: "Cara & Rick Barretto live" },
+      { videoId: "wRuarukPGJs", title: "Thriving During Uncertain Times — Panel Discussion", subtitle: "HTA Live" },
+      { videoId: "2YgPC_6c1wM", title: "May The 4th Be With You — Star Wars life lessons for education", subtitle: "HTA special" },
+      { videoId: "PG7l_pgnYzk", title: "Rick + Cara Update and GoFundMe Charity Contest", subtitle: "Community update" },
+    ],
   },
   {
     companyId: "game-on-events",
