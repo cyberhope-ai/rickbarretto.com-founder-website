@@ -1,6 +1,7 @@
 import { companies } from "@/content/companies";
 import Nav from "@/components/Nav";
 import KeyHighlights from "@/components/KeyHighlights";
+import ThePattern from "@/components/ThePattern";
 import Timeline from "@/components/Timeline";
 import type { Metadata } from "next";
 
@@ -35,6 +36,8 @@ export default function CareerPage() {
         </section>
 
         <KeyHighlights />
+
+        <ThePattern />
 
         {/* Timeline */}
         <section className="px-6 py-16 md:py-20">
