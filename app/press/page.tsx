@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import VideoLightbox from "@/components/VideoLightbox";
+import PDFLightbox from "@/components/PDFLightbox";
 import { pressSections, type PressTier } from "@/content/press";
 import type { Metadata } from "next";
 
@@ -61,30 +62,59 @@ export default function PressPage() {
 
               {/* Press items */}
               {s.press.length > 0 && (
-                <div className="mb-10">
-                  <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3">
+                <div className="mb-10 space-y-6">
+                  <p className="font-sans text-xs tracking-widest uppercase text-blue-700">
                     Press archive · {s.press.length} features
                   </p>
-                  <div className="flex flex-wrap gap-2">
-                    {s.press.map((p, i) => (
-                      <span
-                        key={i}
-                        className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-sans ${tierColor[p.tier]}`}
-                        title={
-                          p.note
-                            ? `${p.note} · ${tierLabel[p.tier]}`
-                            : tierLabel[p.tier]
-                        }
-                      >
-                        <span className="font-semibold">{p.publication}</span>
-                        {p.note && (
-                          <span className="opacity-75 text-[10px]">
-                            · {p.note}
-                          </span>
-                        )}
-                      </span>
-                    ))}
-                  </div>
+                  {(["tier1", "tv", "tier2", "regional"] as PressTier[]).map(
+                    (tier) => {
+                      const items = s.press.filter((p) => p.tier === tier);
+                      if (items.length === 0) return null;
+                      return (
+                        <div key={tier}>
+                          <p className="font-sans text-[11px] tracking-widest uppercase text-slate-500 mb-2">
+                            {tierLabel[tier]} · {items.length}
+                          </p>
+                          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+                            {items.map((p, i) => {
+                              const pill = (
+                                <div
+                                  className={`h-full px-3 py-2.5 rounded-lg text-sm font-sans flex items-start gap-2 leading-snug ${tierColor[p.tier]} ${p.pdfUrl ? "cursor-pointer hover:brightness-110 hover:-translate-y-0.5 transition" : ""}`}
+                                >
+                                  {p.pdfUrl && (
+                                    <span className="text-base leading-none mt-0.5 shrink-0" aria-hidden>
+                                      📄
+                                    </span>
+                                  )}
+                                  <span className="flex-1 min-w-0">
+                                    <span className="font-semibold block truncate">
+                                      {p.publication}
+                                    </span>
+                                    {p.note && (
+                                      <span className="text-[11px] opacity-75 block mt-0.5">
+                                        {p.note}
+                                      </span>
+                                    )}
+                                  </span>
+                                </div>
+                              );
+                              return p.pdfUrl ? (
+                                <PDFLightbox
+                                  key={i}
+                                  url={p.pdfUrl}
+                                  label={p.publication}
+                                >
+                                  {pill}
+                                </PDFLightbox>
+                              ) : (
+                                <div key={i}>{pill}</div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      );
+                    }
+                  )}
                 </div>
               )}
 
