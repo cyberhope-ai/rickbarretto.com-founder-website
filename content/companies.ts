@@ -359,6 +359,117 @@ export const companies: Company[] = [
     },
     websiteUrl: "https://www.arcadeinventors.com/cyberhopeai",
   },
+
+  {
+    id: "tornado-spinner",
+    logo: "/companies/tornado-spinner/logo.png",
+    name: "Tornado Spinner",
+    tagline: "The world's most popular retro arcade emulation spinner",
+    yearStart: 2005,
+    yearEnd: "present",
+    status: "active",
+    description:
+      "A specialized arcade control device engineered for authentic retro-arcade emulation. Twenty years in market and still the number-one design for enthusiasts building custom cabinets. Sold globally direct to the emulation and home-arcade community.",
+    highlights: {
+      customers: ["Home-arcade builders worldwide", "Emulation and retro-gaming community", "DreamAuthentics cabinet customers"],
+      products: ["Tornado Spinner (rotary arcade control)", "Integrated cabinet parts for custom builds"],
+      pricePoint: "Direct-to-consumer $49–$149",
+      markets: ["B2C", "B2B"],
+      notable: [
+        "20+ years continuous product line",
+        "\"Number one most popular design for retro arcade/emulation spinners\"",
+        "Dedicated site: tornadospinner.com",
+      ],
+    },
+    websiteUrl: "https://www.arcadeinventors.com/tornadospinner",
+  },
+
+  {
+    id: "game-on-publishing",
+    logo: "/companies/game-on-publishing/logo.png",
+    name: "Game On Publishing",
+    tagline: "Rick's book on custom retro arcade systems",
+    yearStart: 2015,
+    yearEnd: "present",
+    status: "active",
+    description:
+      "Rick authored \"Game On! — The Ten Things You Need to Know When Designing Your Ultimate Custom Video Arcade,\" published through Amazon Publishing. A decision-making guide for anyone commissioning or buying a custom retro arcade system — distilled from two decades of hands-on builds.",
+    highlights: {
+      products: ["\"Game On!\" — decision-making guide (Amazon Publishing)", "Industry expertise documentation"],
+      markets: ["B2C", "B2B"],
+      notable: [
+        "Authored by Rick Barretto",
+        "Amazon Publishing distribution",
+        "Reference text for arcade enthusiasts and professionals",
+      ],
+    },
+    websiteUrl: "https://www.arcadeinventors.com/gameonpublishing",
+  },
+
+  {
+    id: "jolt-video-live",
+    logo: "/companies/jolt-video-live/logo.png",
+    name: "Jolt Video Live",
+    tagline: "Modular live streaming + conferencing platform",
+    yearStart: 2020,
+    yearEnd: "present",
+    status: "active",
+    description:
+      "A modular live conferencing and streaming platform with customizable components that deploy across education, virtual conferences, corporate training, and virtual tradeshows. Built for enterprise-scale implementations with a flexible component architecture.",
+    highlights: {
+      customers: ["Enterprise event producers", "Educational institutions", "Virtual tradeshow organizers"],
+      products: ["Live video conferencing platform", "Custom streaming deployments", "Virtual conference + tradeshow hosting", "Training delivery stack"],
+      markets: ["B2B", "B2B2C"],
+      notable: ["Modular, customizable architecture", "Enterprise-scale deployment", "Part of the Arcade Inventors IP portfolio"],
+    },
+    websiteUrl: "https://www.arcadeinventors.com/joltvideolive",
+  },
+
+  {
+    id: "sci-fi-life",
+    logo: "/companies/sci-fi-life/logo.png",
+    name: "Sci-Fi Life",
+    tagline: "Roblox-native educational game for coding + game programming",
+    yearStart: 2023,
+    yearEnd: "present",
+    status: "active",
+    description:
+      "An interactive educational game built for VR and Roblox that teaches coding and game programming through immersive 3D gameplay. Playable publicly on Roblox or licensable as a private server / LAN version for schools and organizations — a next-generation platform for technical education at scale.",
+    highlights: {
+      customers: ["Roblox players (public platform)", "Schools + educational institutions (private/LAN licensing)"],
+      products: ["Sci-Fi Life game on Roblox", "Private server / LAN licensing", "Coding + game-programming curriculum"],
+      markets: ["B2C", "B2B", "Nonprofit"],
+      notable: [
+        "Playable on Roblox's massive user base",
+        "Licensable for private school deployments",
+        "Rich 3D sci-fi learning world",
+      ],
+    },
+    websiteUrl: "https://www.arcadeinventors.com/roblox",
+  },
+
+  {
+    id: "ai-vr-metaverse",
+    logo: "/companies/ai-vr-metaverse/logo.png",
+    name: "AI / VR Metaverse Labs",
+    tagline: "XR training and immersive learning",
+    yearStart: 2022,
+    yearEnd: "present",
+    status: "active",
+    description:
+      "XR (AR/VR/MR) training content and gaming products focused on skill development and employment pathways. Partners with Indiana University on training-content development, bridging cutting-edge extended reality with practical workforce-development applications.",
+    highlights: {
+      customers: ["Indiana University (XR training content partner)", "Hope Training Academy", "Corporate training clients"],
+      products: ["XR training content (AR/VR/MR)", "Educational gaming products", "Immersive learning solutions", "Real-Money Ludo game"],
+      markets: ["B2B", "B2C", "Nonprofit"],
+      notable: [
+        "Indiana University XR training partnership",
+        "Integrated with Hope Training Academy workforce pipeline",
+        "Part of Arcade Inventors portfolio",
+      ],
+    },
+    websiteUrl: "https://www.arcadeinventors.com/aivrmetaverse",
+  },
 ];
 
 // Key highlights aggregated for the summary cards at the top.

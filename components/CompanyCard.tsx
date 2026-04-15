@@ -21,11 +21,13 @@ const statusLabel: Record<Company["status"], string> = {
 function LogoBlock({ name, logoUrl }: { name: string; logoUrl?: string }) {
   if (logoUrl) {
     return (
-      <img
-        src={logoUrl}
-        alt={`${name} logo`}
-        className="w-20 h-20 md:w-24 md:h-24 rounded-xl object-contain bg-white border border-slate-200"
-      />
+      <div className="w-24 h-24 md:w-28 md:h-28 flex items-center justify-center shrink-0">
+        <img
+          src={logoUrl}
+          alt={`${name} logo`}
+          className="max-w-full max-h-full object-contain"
+        />
+      </div>
     );
   }
   const initials = name
