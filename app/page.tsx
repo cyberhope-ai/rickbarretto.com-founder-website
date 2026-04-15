@@ -1,7 +1,10 @@
 import { chapters } from "@/content/chapters";
+import Nav from "@/components/Nav";
 
 export default function Home() {
   return (
+    <>
+    <Nav active="/" />
     <main className="min-h-screen">
       {/* Hero */}
       <section className="min-h-screen flex flex-col justify-center items-center px-6 py-24 text-center bg-gradient-to-b from-blue-950 via-blue-900 to-indigo-950 text-white">
@@ -82,5 +85,6 @@ export default function Home() {
         </p>
       </footer>
     </main>
+    </>
   );
 }
