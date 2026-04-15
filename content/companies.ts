@@ -64,6 +64,7 @@ export const companies: Company[] = [
 
   {
     id: "dreamauthentics",
+    logo: "/companies/dreamauthentics/logo.png",
     name: "DreamAuthentics",
     tagline: "The world's first multi-game personal arcade",
     yearStart: 2000,
@@ -137,6 +138,7 @@ export const companies: Company[] = [
 
   {
     id: "harry-potter-wall-art",
+    logo: "/companies/harry-potter-wall-art/logo.png",
     name: "Harry Potter Wall Art",
     tagline: "Warner Bros.–licensed repositionable wall art",
     yearStart: 2005,
@@ -166,6 +168,7 @@ export const companies: Company[] = [
 
   {
     id: "tln",
+    logo: "/companies/tln/logo.png",
     name: "The LAN Network (TLN)",
     tagline: "The first dedicated esports training house",
     yearStart: 2012,
@@ -200,6 +203,7 @@ export const companies: Company[] = [
 
   {
     id: "video-game-palooza",
+    logo: "/companies/video-game-palooza/logo.png",
     name: "Video Game Palooza",
     tagline: "501(c)(3) — gaming as a vehicle for STEM education",
     yearStart: 2013,
@@ -232,6 +236,7 @@ export const companies: Company[] = [
 
   {
     id: "game-on-events",
+    logo: "/companies/game-on-events/logo.png",
     name: "Game On Events",
     tagline: "Indiana's first 80-station esports center",
     yearStart: 2017,
@@ -266,6 +271,7 @@ export const companies: Company[] = [
 
   {
     id: "hope-training-academy",
+    logo: "/companies/hope-training-academy/logo.png",
     name: "Hope Training Academy",
     tagline: "Free IT + cybersecurity training for underserved Hoosiers",
     yearStart: 2018,
