@@ -10,12 +10,16 @@ export default function ThePattern() {
       ],
     },
     {
-      era: "2000 — 2012",
-      platform: "DreamAuthentics custom PC arcade cabinet",
+      era: "2000 — 2018",
+      platform: "Video Game Industry / Arcade Technology",
       uses: [
+        "DreamAuthentics — world's first custom PC multi-game arcade",
+        "Tornado Spinner — #1 retro arcade spinner worldwide",
+        "NVIDIA Shield Arcade / Shield+ — custom joysticks + buttons",
+        "XBOX + PlayStation controller + arcade cabinet integration",
+        "Game On esports — 80-station Indiana esports facility (2017)",
         "Harry Potter Wall Art — Warner Bros. licensed web-to-print",
         "Video Games Live on-stage interactive competitions",
-        "Playboy Mansion + celebrity-client custom builds",
       ],
     },
     {
