@@ -86,7 +86,7 @@ export default function CompanyCard({ c }: { c: Company }) {
           <p className="text-slate-800 font-sans leading-relaxed text-sm md:text-base">
             {c.description}
           </p>
-          {c.cta && (
+          {c.cta && (c.cta.placement ?? "header") === "header" && (
             <a
               href={c.cta.url}
               target="_blank"
@@ -119,6 +119,16 @@ export default function CompanyCard({ c }: { c: Company }) {
       {/* Expanded body */}
       {open && (
         <div className="px-6 md:px-8 py-6 bg-slate-50/50 border-t border-slate-200 space-y-5">
+          {c.cta && c.cta.placement === "details" && (
+            <a
+              href={c.cta.url}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-b from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-amber-950 font-sans font-semibold text-sm shadow-md hover:shadow-lg transition"
+            >
+              ▶ {c.cta.label}
+            </a>
+          )}
           <DetailBlock label="Customers Served" items={c.highlights.customers} />
           <DetailBlock label="Products / Offerings" items={c.highlights.products} />
 

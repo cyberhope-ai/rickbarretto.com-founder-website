@@ -25,7 +25,7 @@ export type Company = {
   moreImagesUrl?: string;
   websiteUrl?: string;
   exitNote?: string;
-  cta?: { label: string; url: string };
+  cta?: { label: string; url: string; placement?: "header" | "details" };
 };
 
 export const companies: Company[] = [
@@ -385,6 +385,7 @@ export const companies: Company[] = [
     cta: {
       label: "Watch acceptance speech",
       url: "https://www.youtube.com/watch?v=Gy1k2C5o7SU",
+      placement: "details",
     },
     websiteUrl: "https://www.ivghof.info/project/video-game-palooza/",
   },
