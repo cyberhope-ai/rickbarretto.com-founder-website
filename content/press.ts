@@ -110,7 +110,39 @@ export const pressSections: PressSection[] = [
       { publication: "The Today Show", tier: "tv" },
     ],
     videos: [
-      { videoId: "OmTOXL43dw4", title: "DreamAuthentics — archive footage", subtitle: "Original source; YouTube compression is lossy — higher-resolution originals will replace this." },
+      // TV / national network features
+      { videoId: "eEZEXzdzHQ0", title: "WCBS-TV CBS New York Feature", subtitle: "CBS New York" },
+      { videoId: "FOJCx-uYR9M", title: "E! Television — Money To Burn", subtitle: "E!" },
+      { videoId: "QAz4wNWgEuc", title: "FOX Television Chicago", subtitle: "FOX Chicago" },
+      { videoId: "w1yq3XlUi6c", title: "FOX Television — Inside Indiana Business", subtitle: "FOX" },
+      { videoId: "R6AfRX9cZn0", title: "MSNBC NewsArcades", subtitle: "MSNBC" },
+      { videoId: "q260se5yFU8", title: "PBS Television feature", subtitle: "PBS" },
+      { videoId: "CCDrudSBMGw", title: "The Travel Channel feature", subtitle: "Travel Channel" },
+      { videoId: "ivQzK-sIFZc", title: "Eladius feature by HGTV", subtitle: "HGTV" },
+      { videoId: "Nw8fsbg13T4", title: "Feature on Wealth TV", subtitle: "Wealth TV" },
+      { videoId: "84M0ajyx7Jw", title: "G4 Attack of the Show feature", subtitle: "G4 Network" },
+      { videoId: "M5ewjIQPZns", title: "G4 interview at Gencon — with Tommy Tallarico", subtitle: "G4 · Gencon" },
+
+      // Regional / local TV
+      { videoId: "rz-dIa8r6qY", title: "WXIN-59 DreamTrust Interview — Rick Barretto + Mike Garrison", subtitle: "FOX WXIN" },
+      { videoId: "O7u4ImFKiyo", title: "Q95 Man Cave — Channel 8 Bob & Tom interview", subtitle: "Channel 8 / Q95" },
+      { videoId: "yS7t91h8euY", title: "Q95 Man Cave — 2011 Indy Home Show with Bob & Tom", subtitle: "2011 Indy Home Show" },
+
+      // Live events + celebrity / IndyCar
+      { videoId: "OLBAjleufVU", title: "Indy 500 — Rafael Matos plays DreamAuthentics IndyCar Simulator", subtitle: "2009" },
+      { videoId: "V-hrQRWduXs", title: "Racing Simulator — Rafa Matos, Luczo Dragon, CBS Sports Interview", subtitle: "IndyCar" },
+      { videoId: "gTQMw7unuYo", title: "DreamAuthentics at VGL Los Angeles", subtitle: "Video Games Live tour" },
+      { videoId: "ssEHC7OdC_A", title: "DreamAuthentics at VGL Washington DC", subtitle: "Video Games Live tour" },
+
+      // Product features + awards + overviews
+      { videoId: "TskuojFoi70", title: "What is a DreamAuthentics Arcade? Massive Fun!", subtitle: "Product overview" },
+      { videoId: "QLDsVbWQ-E0", title: "Custom Arcades for your mancave — by Angie's List", subtitle: "Angie's List" },
+      { videoId: "w6S9fn377Z8", title: "Wins ManiaTV's Holiday Geek Gift 2007", subtitle: "ManiaTV · 2007" },
+      { videoId: "AOmpygoRwCQ", title: "DreamAuthentics game arriving at Mania TV", subtitle: "ManiaTV" },
+      { videoId: "OmTOXL43dw4", title: "Popular Mechanics Review", subtitle: "Popular Mechanics" },
+
+      // DreamTrust brand (parent co)
+      { videoId: "IIKAuWppL4k", title: "FOX WXIN — Rick Barretto on Licensed IZOD Product Line", subtitle: "DreamTrust Corporation" },
     ],
   },
   {
@@ -157,6 +189,9 @@ export const pressSections: PressSection[] = [
       { publication: "Indianapolis Star", tier: "tier1", note: "August 2009 — Warner Bros. license" },
       { publication: "Infinitus 2010 HP Convention", tier: "regional", note: "DreamTrust keynote vendor" },
     ],
-    videos: [],
+    videos: [
+      { videoId: "rH-NROYBSiQ", title: "DreamTrust announces HarryPotterWallArt.com", subtitle: "Press release" },
+      { videoId: "TTwR8K28-e0", title: "HarryPotterWallArt.com — Product Introduction & Overview", subtitle: "Walkthrough" },
+    ],
   },
 ];
