@@ -51,7 +51,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${playfair.variable}`}>
-      <body className="bg-stone-50 text-stone-900 font-sans antialiased">
+      <body className="bg-white text-slate-900 font-sans antialiased">
         {children}
       </body>
     </html>
