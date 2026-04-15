@@ -29,6 +29,42 @@ export type Company = {
 
 export const companies: Company[] = [
   {
+    id: "word-systems",
+    logo: "/companies/word-systems/logo.png",
+    name: "Word Systems, Inc.",
+    tagline: "Medical dictation, transcription, and healthcare IT — where it all started",
+    yearStart: 1990,
+    yearEnd: 2025,
+    status: "acquired",
+    description:
+      "Rick's career in business began here in 1990 — first as a route technician and salesman at the family company (founded 1977), then as the architect of its Midwest healthcare-IT and medical-dictation business. He designed medical dictation and transcription systems for hospitals and medical facilities, integrating Stat Report + SONY/Philips/DVI/RTAS digital dictation hardware. Wrote HL7 interfaces that helped build the origins of the electronic patient record. End-to-end workflow: voice dictation → manual transcription → mainframe upload → doctor sign-off via DocView. Thirty-five years later, acquired by Valsoft Corporation (2025) alongside iRecord.",
+    highlights: {
+      customers: [
+        "Hospitals + medical facilities across the Midwest",
+        "Transcriptionist services",
+        "Health systems running mainframe EMR",
+      ],
+      products: [
+        "Medical dictation + transcription systems",
+        "Stat Report integration (dictation hardware)",
+        "SONY / Philips / DVI / RTAS digital dictation lines",
+        "HL7 interfaces — origins of the electronic patient record",
+        "DocView — physician transcription sign-off",
+      ],
+      pricePoint: "Enterprise healthcare B2B",
+      markets: ["B2B"],
+      notable: [
+        "Rick's first sales role: cold-calling every business in downtown Indianapolis with a stack of cards",
+        "Top salesperson of the year every year he worked the sales floor",
+        "Pioneering work connecting disparate medical hardware through standardized HL7",
+        "First industry exposure to healthcare IT — a thread that resurfaces in CyberHope AI 35 years later",
+        "Acquired by Valsoft (2025) alongside iRecord — ~$20M combined",
+      ],
+    },
+    exitNote: "Acquired by Valsoft Corporation (2025) alongside iRecord — ~$20M combined.",
+  },
+
+  {
     id: "wsi-multimedia",
     logo: "/companies/wsi-multimedia/logo.png",
     name: "WSI Multimedia",
@@ -109,32 +145,39 @@ export const companies: Company[] = [
 
   {
     id: "irecord",
+    logo: "/companies/irecord/logo.png",
     name: "iRecord",
-    tagline: "Digital recording for law enforcement interviews",
-    yearStart: 2002,
+    tagline: "Digital audio + video recording for law enforcement and child advocacy",
+    yearStart: 2004,
     yearEnd: 2025,
     firstInCategory: "First digital law enforcement interview/interrogation recording system",
     status: "acquired",
     description:
-      "\"Nobody believed in it except mom and dad — they took a second mortgage to fund it.\" iRecord created and defined the secure-video-recording market for police interviews and interrogations, solving chain-of-custody and evidence-integrity problems for departments nationwide. The product that nobody believed in became the product that sold the family business.",
+      "\"Nobody believed in it except mom and dad — they took a second mortgage to fund it.\" R&D began in 2002 when Illinois passed its mandate to record all homicide interviews (Obama-era IL senate). First system installed 2003; commercial platform launched 2004. iRecord created and defined the secure-video-recording market for police interviews, child advocacy interviews, and investigative recording. The product nobody believed in became the product that sold the family business.",
     highlights: {
       customers: [
-        "State and local police departments (US)",
-        "County prosecutors",
-        "Federal law enforcement agencies",
+        "State + local police departments nationwide",
+        "County prosecutors + federal law enforcement",
+        "Child Advocacy Centers",
+        "Healthcare + research institutions with sensitive-interview needs",
       ],
       products: [
-        "iRecord interview/interrogation recorders (hardware + software)",
+        "iRecord Universe — standalone or multi-unit, enterprise-server-ready, 4TB HDD, optional RAID 1",
+        "iRecord Enterprise",
+        "iRecord Live Conference (BlackBox) — SECURE on-premise conferencing, no internet required",
         "Chain-of-custody evidence management",
-        "Secure cloud + on-prem retention",
+        "One-touch recording: toggle/keyed/push-button (stainless or white)",
+        "RTSP HD live monitoring, PIP with PIR sensor + thermostat camera",
       ],
-      pricePoint: "Enterprise B2B SaaS + hardware — agency-tier licensing",
+      pricePoint: "Enterprise B2G + B2B — agency-tier licensing",
       markets: ["B2G", "B2B"],
       notable: [
+        "iRecord 2021 Cloud Roadmap + NICE Investigate integration (911 → Investigate → Prosecute → Defend pipeline)",
+        "Open architecture: non-proprietary, Microsoft SQL, WMV, DVD, H.264 IP cameras",
+        "Positioned against Zoom + 3rd-party tools — on-prem secure alternative amid rising ransomware on law enforcement",
+        "Met federal + state mandatory-recording laws (>50% of US states by 2016)",
+        "20+ years keeping children and communities safe",
         "Part of the $25B law enforcement technology industry",
-        "Met federal and state mandatory-recording laws (started when Obama was an IL senator)",
-        "As of 2016, over half of US states had mandatory recording laws",
-        "20+ years of keeping children and communities safe",
       ],
     },
     websiteUrl: "https://www.arcadeinventors.com/irecord",
