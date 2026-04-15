@@ -7,8 +7,6 @@ export const metadata: Metadata = {
     "SkillDNA is a PrecognitionOS-powered dashboard that turns scattered assessments, experiences, and achievements into a single, evolving capability genome — evidence-backed, portable, and automatically updating.",
 };
 
-const DEMO_URL = "https://skilldna-hd8bsuaw.manus.space/dashboard";
-
 const features = [
   {
     title: "Capability Genome",
@@ -68,35 +66,72 @@ export default function SkillDNAPage() {
         <section className="bg-gradient-to-b from-blue-950 via-blue-900 to-indigo-950 text-white px-6 py-20 md:py-28">
           <div className="max-w-5xl mx-auto text-center">
             <p className="font-sans text-xs tracking-widest uppercase text-sky-300 mb-4">
-              A CyberHope AI Innovation · Powered by PrecognitionOS
+              One of Rick&rsquo;s latest innovations · An app built to run on PrecognitionOS
             </p>
             <h1 className="font-display text-4xl md:text-7xl leading-[1.05] mb-6">
-              The world&rsquo;s first human potential dashboard.
+              SkillDNA.
             </h1>
-            <p className="font-sans text-lg md:text-2xl text-sky-100 max-w-3xl mx-auto leading-relaxed mb-10">
+            <p className="font-display italic text-2xl md:text-4xl text-sky-200 mb-6 leading-tight">
+              The world&rsquo;s first human potential dashboard.
+            </p>
+            <p className="font-sans text-lg md:text-xl text-sky-100 max-w-3xl mx-auto leading-relaxed mb-8">
               A living dashboard that turns scattered assessments,
               experiences, and achievements into a single, evolving capability
               genome.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              <a
-                href={DEMO_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-b from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-amber-950 font-sans font-semibold shadow-lg hover:shadow-xl transition"
-              >
-                ▶ See the live demo
-              </a>
-              <a
-                href="https://cyberhopeai.com"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/30 hover:bg-white/10 text-white font-sans font-semibold transition"
-              >
-                Enterprise solutions
-              </a>
+            <p className="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/20 font-sans text-sm text-sky-200">
+              🚧 In active development · stay tuned
+            </p>
+          </div>
+        </section>
+
+        {/* Screenshots (placeholder until real ones drop in) */}
+        <section className="px-6 py-14 md:py-16 bg-white border-b border-slate-200">
+          <div className="max-w-5xl mx-auto">
+            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3 text-center">
+              A peek at the build
+            </p>
+            <h2 className="font-display text-2xl md:text-4xl text-slate-900 mb-8 text-center leading-tight">
+              Screenshots from the live app.
+            </h2>
+            <div className="grid md:grid-cols-3 gap-4">
+              {[1, 2, 3].map((i) => (
+                <div
+                  key={i}
+                  className="aspect-[4/3] rounded-xl bg-gradient-to-br from-blue-50 via-slate-50 to-indigo-50 border-2 border-dashed border-blue-200 flex items-center justify-center text-center p-6"
+                >
+                  <div>
+                    <p className="font-display text-blue-700 text-lg mb-1">
+                      Screenshot {i}
+                    </p>
+                    <p className="font-sans text-xs text-slate-500">
+                      Coming as the app launches
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
-            <p className="mt-6 text-xs text-sky-300/70">
-              The live demo is a simulated view today; the production platform
-              is under active development.
+            <p className="text-center font-sans text-sm text-slate-500 mt-6">
+              Rick is currently developing the production app; real screenshots
+              will drop here as milestones land.
+            </p>
+          </div>
+        </section>
+
+        {/* Story placeholder — "Why I made it" */}
+        <section className="px-6 py-14 md:py-16 bg-slate-50 border-b border-slate-200">
+          <div className="max-w-3xl mx-auto">
+            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3">
+              Why I made it
+            </p>
+            <h2 className="font-display text-2xl md:text-4xl text-slate-900 leading-tight mb-4">
+              The backstory is coming.
+            </h2>
+            <p className="font-sans text-slate-700 leading-relaxed">
+              There&rsquo;s a specific reason SkillDNA exists — a pattern Rick
+              has watched play out across 35 years of hiring, training,
+              mentoring, and running a nonprofit that serves underrepresented
+              talent. That story goes here, in his own words. Stay tuned.
             </p>
           </div>
         </section>
@@ -195,14 +230,9 @@ export default function SkillDNAPage() {
                 Clarity on your capabilities. Portable across every platform.
                 Evidence-backed and yours to keep for life.
               </p>
-              <a
-                href={DEMO_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 text-blue-700 hover:text-blue-900 font-sans font-semibold underline underline-offset-4"
-              >
-                See the live demo →
-              </a>
+              <p className="text-sm font-sans text-slate-500 italic">
+                Signup coming soon.
+              </p>
             </div>
             <div className="bg-white rounded-xl p-8 border border-slate-200">
               <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-2">
