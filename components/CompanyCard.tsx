@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import type { Company } from "@/content/companies";
+import Lightbox from "./Lightbox";
 
 const statusColors: Record<Company["status"], string> = {
   active: "bg-emerald-100 text-emerald-800 border-emerald-200",
@@ -21,11 +22,12 @@ const statusLabel: Record<Company["status"], string> = {
 function LogoBlock({ name, logoUrl }: { name: string; logoUrl?: string }) {
   if (logoUrl) {
     return (
-      <div className="w-24 h-24 md:w-28 md:h-28 flex items-center justify-center shrink-0">
-        <img
+      <div className="w-24 h-24 md:w-28 md:h-28 shrink-0">
+        <Lightbox
           src={logoUrl}
           alt={`${name} logo`}
-          className="max-w-full max-h-full object-contain"
+          className="w-full h-full flex items-center justify-center"
+          thumbClassName="max-w-full max-h-full object-contain hover:opacity-90 transition"
         />
       </div>
     );
@@ -84,6 +86,16 @@ export default function CompanyCard({ c }: { c: Company }) {
           <p className="text-slate-800 font-sans leading-relaxed text-sm md:text-base">
             {c.description}
           </p>
+          {c.cta && (
+            <a
+              href={c.cta.url}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 mt-5 px-5 py-2.5 rounded-full bg-gradient-to-b from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-amber-950 font-sans font-semibold text-sm shadow-md hover:shadow-lg transition"
+            >
+              {c.cta.label} →
+            </a>
+          )}
         </div>
       </div>
 
@@ -159,12 +171,9 @@ export default function CompanyCard({ c }: { c: Company }) {
             {c.images && c.images.length > 0 ? (
               <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                 {c.images.slice(0, 8).map((src, i) => (
-                  <img
-                    key={i}
-                    src={src}
-                    alt={`${c.name} ${i + 1}`}
-                    className="aspect-[4/3] object-cover rounded-lg border border-slate-200"
-                  />
+                  <div key={i} className="aspect-[4/3]">
+                    <Lightbox src={src} alt={`${c.name} ${i + 1}`} />
+                  </div>
                 ))}
               </div>
             ) : (

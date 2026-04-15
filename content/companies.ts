@@ -25,6 +25,7 @@ export type Company = {
   moreImagesUrl?: string;
   websiteUrl?: string;
   exitNote?: string;
+  cta?: { label: string; url: string };
 };
 
 export const companies: Company[] = [
@@ -435,7 +436,7 @@ export const companies: Company[] = [
 
   {
     id: "game-on-publishing",
-    logo: "/companies/game-on-publishing/logo.png",
+    logo: "/companies/game-on-publishing/book-cover.jpg",
     name: "Game On Publishing",
     tagline: "Rick's book on custom retro arcade systems",
     yearStart: 2015,
@@ -452,10 +453,11 @@ export const companies: Company[] = [
         "Reference text for arcade enthusiasts and professionals",
       ],
     },
-    images: [
-      "/companies/game-on-publishing/book-cover.jpg",
-      "/companies/game-on-publishing/rick-author.jpg",
-    ],
+    images: ["/companies/game-on-publishing/rick-author.jpg"],
+    cta: {
+      label: "Buy on Amazon",
+      url: "https://www.amazon.com/Game-Things-Buying-Classic-Gaming-ebook/dp/B01BN3FLJ2/",
+    },
     websiteUrl: "https://www.arcadeinventors.com/gameonpublishing",
   },
 
