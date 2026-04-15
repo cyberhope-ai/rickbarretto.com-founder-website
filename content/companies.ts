@@ -357,21 +357,36 @@ export const companies: Company[] = [
 
   {
     id: "vg-hall-of-fame",
-    name: "Video Game Hall of Fame",
-    tagline: "Inducted — International Video Game Hall of Fame",
+    logo: "/companies/vg-hall-of-fame/logo.png",
+    name: "International Video Game Hall of Fame",
+    tagline: "Community Action Award — Rick + Cara Barretto, inducted 2019",
     yearStart: 2019,
     yearEnd: 2019,
     status: "milestone",
     description:
-      "Inducted by industry legends Billy Mitchell (King of Kong, Donkey Kong world champion) and Walter Day (Twin Galaxies founder, pioneer of the video game referee). Recognition for 20+ years of innovation across DreamAuthentics, TLN, Game On Events, and Video Game Palooza. Both Mitchell and Day became personal friends who have stayed at Rick's house for multiple days.",
+      "Rick and Cara Barretto received induction into the International Video Game Hall of Fame in 2019 — Community Action Award — recognizing their contributions through Video Game Palooza, Hope Training Academy, and decades of hardware innovation across DreamAuthentics, TLN, and Game On. Inducted by industry legends Billy Mitchell (King of Kong, Donkey Kong world champion) and Walter Day (Twin Galaxies founder, pioneer of the video game referee) — both of whom became personal friends who have stayed at Rick's house for multiple days.",
     highlights: {
       notable: [
-        "Inducted 2019 — while practically nobody in Indiana understood what Rick was building",
+        "Award category: Community Action Award (2019)",
+        "Inducted alongside Cara Barretto — joint recognition",
         "Billy Mitchell and Walter Day — personal friends",
         "Recognition for hardware innovation, esports infrastructure, and gaming-as-education",
+        "Rick has his own officially licensed HOF trading card (front + back)",
+        "IVGHOF acknowledges Video Game Palooza 501(c)(3) as the institutional vehicle for the award",
       ],
     },
-    websiteUrl: "https://www.arcadeinventors.com/vghalloffame",
+    images: [
+      "/companies/vg-hall-of-fame/trading-card-front.jpg",
+      "/companies/vg-hall-of-fame/trading-card-back.jpg",
+      "/companies/vg-hall-of-fame/award-galaxies.jpg",
+      "/companies/vg-hall-of-fame/ceremony-2019.jpg",
+      "/companies/vg-hall-of-fame/ivghof-inductee-portrait.jpg",
+    ],
+    cta: {
+      label: "Watch acceptance speech",
+      url: "https://www.youtube.com/watch?v=Gy1k2C5o7SU",
+    },
+    websiteUrl: "https://www.ivghof.info/project/video-game-palooza/",
   },
 
   {
