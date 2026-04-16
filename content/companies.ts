@@ -145,6 +145,16 @@ export const companies: Company[] = [
         "At the Playboy Mansion with Hugh Hefner, The Girls Next Door, Ludacris",
       ],
     },
+    images: [
+      "/companies/dreamauthentics/playboy-rick-hef-girls.jpg",
+      "/companies/dreamauthentics/playboy-rick-hef-candid.jpg",
+      "/companies/dreamauthentics/playboy-rick-mansion-phone.jpg",
+      "/companies/dreamauthentics/playboy-rick-hef-party.jpg",
+      "/companies/dreamauthentics/playboy-mansion-grotto.jpg",
+      "/companies/dreamauthentics/playboy-rick-friend-arcade.jpg",
+      "/companies/dreamauthentics/celeb-ray-park-darth-maul.jpg",
+      "/companies/dreamauthentics/celeb-nolan-bushnell-atari.jpg",
+    ],
     websiteUrl: "https://www.arcadeinventors.com/dreamauthentics",
   },
 
@@ -320,6 +330,13 @@ export const companies: Company[] = [
         "Rick Barretto — Chief Visionary Officer",
       ],
     },
+    images: [
+      "/companies/game-on-events/ribbon-cutting-mayor.jpg",
+      "/companies/game-on-events/opening-tournament.jpg",
+      "/companies/game-on-events/ibj-sep-2017-p1.jpg",
+      "/companies/game-on-events/ibj-sep-2017-p2.jpg",
+      "/companies/game-on-events/ibj-sep-2017-p3.jpg",
+    ],
     websiteUrl: "https://www.arcadeinventors.com/gameon",
   },
 

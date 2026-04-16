@@ -198,7 +198,8 @@ export const pressSections: PressSection[] = [
     summary:
       "Indianapolis Business Journal cover story (Dec 2017 — \"Esports Explode\"), Hamilton County Reporter, and partner-university coverage.",
     press: [
-      { publication: "Indianapolis Business Journal — COVER", tier: "tier1", note: "December 4–10, 2017 — Esports Explode" },
+      { publication: "Indianapolis Business Journal — COVER", tier: "tier1", pdfUrl: "/press/game-on-events/ibj-esports-cover-dec-2017.pdf", note: "December 4–10, 2017 — Esports Explode" },
+      { publication: "IBJ — Esports Becoming Global Sensation", tier: "tier1", pdfUrl: "/press/game-on-events/ibj-esports-global-sensation-dec-2017.pdf", note: "December 2, 2017" },
       { publication: "Hamilton County Reporter", tier: "regional", note: "Mayor Cook + Game On launch" },
     ],
     videos: [
