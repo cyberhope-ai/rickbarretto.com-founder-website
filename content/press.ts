@@ -117,36 +117,24 @@ export const pressSections: PressSection[] = [
       // National TV
       { videoId: "eEZEXzdzHQ0", title: "WCBS-TV CBS New York Feature", subtitle: "CBS New York" },
       { videoId: "FOJCx-uYR9M", title: "E! Television — Money To Burn", subtitle: "E!" },
-      { videoId: "QAz4wNWgEuc", title: "FOX Television Chicago", subtitle: "FOX Chicago" },
       { videoId: "w1yq3XlUi6c", title: "FOX Television — Inside Indiana Business", subtitle: "FOX" },
       { videoId: "R6AfRX9cZn0", title: "MSNBC NewsArcades", subtitle: "MSNBC" },
       { videoId: "q260se5yFU8", title: "PBS Television feature", subtitle: "PBS" },
       { videoId: "CCDrudSBMGw", title: "The Travel Channel feature", subtitle: "Travel Channel" },
       { videoId: "ivQzK-sIFZc", title: "Eladius feature by HGTV", subtitle: "HGTV" },
-      { videoId: "Nw8fsbg13T4", title: "Feature on Wealth TV", subtitle: "Wealth TV" },
       { videoId: "84M0ajyx7Jw", title: "G4 Attack of the Show feature", subtitle: "G4 Network" },
       { videoId: "M5ewjIQPZns", title: "G4 interview at Gencon — with Tommy Tallarico", subtitle: "G4 · Gencon" },
 
       // Regional / local TV
-      { videoId: "rz-dIa8r6qY", title: "WXIN-59 DreamTrust Interview — Rick Barretto + Mike Garrison", subtitle: "FOX WXIN" },
-      { videoId: "O7u4ImFKiyo", title: "Q95 Man Cave — Channel 8 Bob & Tom interview", subtitle: "Channel 8 / Q95" },
-      { videoId: "yS7t91h8euY", title: "Q95 Man Cave — 2011 Indy Home Show with Bob & Tom", subtitle: "2011 Indy Home Show" },
-
       // Live events + celebrity / IndyCar
       { videoId: "OLBAjleufVU", title: "Indy 500 — Rafael Matos plays DreamAuthentics IndyCar Simulator", subtitle: "2009" },
       { videoId: "V-hrQRWduXs", title: "Racing Simulator — Rafa Matos, Luczo Dragon, CBS Sports Interview", subtitle: "IndyCar" },
       { videoId: "gTQMw7unuYo", title: "DreamAuthentics at VGL Los Angeles", subtitle: "Video Games Live tour" },
-      { videoId: "ssEHC7OdC_A", title: "DreamAuthentics at VGL Washington DC", subtitle: "Video Games Live tour" },
-
       // Product features + awards
-      { videoId: "w6S9fn377Z8", title: "Wins ManiaTV's Holiday Geek Gift 2007", subtitle: "ManiaTV · 2007" },
-      { videoId: "AOmpygoRwCQ", title: "DreamAuthentics game arriving at Mania TV", subtitle: "ManiaTV" },
       { videoId: "OmTOXL43dw4", title: "Popular Mechanics Review", subtitle: "Popular Mechanics" },
 
       // DreamTrust brand (parent co)
-      { videoId: "IIKAuWppL4k", title: "FOX WXIN — Rick Barretto on Licensed IZOD Product Line", subtitle: "DreamTrust Corporation" },
       // Additional Angie's List coverage — Rick interview cut
-      { videoId: "yD7mnBtqe3M", title: "Angie's List loves DreamAuthentics Retro Arcades — Rick Barretto interview", subtitle: "Angie's List" },
     ],
   },
   {
@@ -158,27 +146,15 @@ export const pressSections: PressSection[] = [
     videos: [
       // Charity Arcade — Indiana State Museum (first in the country)
       { videoId: "-KDBYBmnKDo", title: "VGP Charity Arcade at the Indiana State Museum — first in the Country!", subtitle: "Launch clip" },
-      { videoId: "wwaZIdKmgDk", title: "Charity Arcade Debut at Indiana State Museum — WISH TV Channel 8", subtitle: "Channel 8" },
       { videoId: "8GetGlk5ksc", title: "Rick Barretto — Retro Arcade Collector interview at Indiana State Museum", subtitle: "CBS Indianapolis" },
-      { videoId: "ctBP7JVPgr4", title: "Rick Barretto — Retro Arcade interview (Part 2) at Indiana State Museum", subtitle: "Indiana State Museum" },
       { videoId: "2mabyf18fmg", title: "Cara Barretto — Channel 8 CBS at Indiana State Museum Charity Arcade", subtitle: "Channel 8 CBS" },
 
       // Create and Play Camps
       { videoId: "eLjJ6q4Q8OE", title: "Create and Play Camps — Channel 13 Summer Coding Camps for kids", subtitle: "Channel 13" },
-      { videoId: "B9SCwvgkJok", title: "Create and Play Camps", subtitle: "Program overview" },
-
       // Rick as VGP co-founder / retro collector
       { videoId: "kEi74Q7_zuk", title: "VGP co-founder + retro game collector — creator of DreamAuthentics since 1999", subtitle: "About Rick" },
 
       // Diablo Immortal / game-content series (produced under VGP banner)
-      { videoId: "GxUnBX9V-H0", title: "Diablo Immortal BG Date Night — Empress Reign / Ninja Fortnite / esports", subtitle: "Diablo Immortal series" },
-      { videoId: "fccR5x28_eM", title: "Diablo Immortal BG Date Night — Ascension Clan: Helene PvP + Battlegrounds", subtitle: "Diablo Immortal series" },
-      { videoId: "pweegJnqx2g", title: "Diablo Immortal — Castle Cyrangar solo defense gets HACKED by my warband", subtitle: "Diablo Immortal series" },
-      { videoId: "CG_EVXKwMR4", title: "Diablo Immortal — Predatory Monetization Discussion with Roblox Game Dev", subtitle: "Microtransactions · long-form" },
-      { videoId: "ox3poLH_DIY", title: "Smart Investing in Legendary Gems — Frozen Heart Level 10 Upgrade Tips", subtitle: "Diablo Immortal · strategy" },
-      { videoId: "XHF9Q6gNHgw", title: "Smart Investing in Legendary Gems — Diablo Immortal", subtitle: "Diablo Immortal · strategy" },
-      { videoId: "5wijtVVAzGg", title: "Diablo Immortal GPU Tech Tips and Cheating Orbs", subtitle: "Diablo Immortal · deep dive" },
-      { videoId: "bL31WafO0l0", title: "Diablo Immortal — FIX for PC Connection Issues", subtitle: "Diablo Immortal · technical" },
     ],
   },
   {
@@ -190,45 +166,23 @@ export const pressSections: PressSection[] = [
     videos: [
       // Welcomes + tour
       { videoId: "0q1-Uy_ARts", title: "Welcome to Hope Training Academy — 2023", subtitle: "Start here" },
-      { videoId: "f43qnKIriLQ", title: "Welcome to Hope Training Academy — 2021", subtitle: "2021" },
       { videoId: "y2AlE2sPN8Y", title: "HTA Tour and Opportunity", subtitle: "Facility walkthrough" },
 
       // Program promos
       { videoId: "EouaO6ory88", title: "Student Dreams Fulfilled", subtitle: "Promo" },
-      { videoId: "bcskTTj5X64", title: "IT and Generations Latino", subtitle: "Promo" },
-      { videoId: "aV1pfkcJwGc", title: "Chelsea — Single Mom IT", subtitle: "Promo" },
       { videoId: "bsetqsisiJg", title: "What does an IT Pro do?", subtitle: "Promo" },
-      { videoId: "ofADmQ_wPkQ", title: "Preparing IT Professionals", subtitle: "Promo" },
-      { videoId: "uA-bD03-fRE", title: "CompTIA Job Certification", subtitle: "Promo" },
-
       // Student + staff testimonials (the core of the mission)
       { videoId: "_GQh4apUpyQ", title: "Former Students Who Are Now Teachers", subtitle: "Student testimonials" },
       { videoId: "jqWnaB2DfzU", title: "Students Who Are Now Teachers (short)", subtitle: "Student testimonials" },
-      { videoId: "TWnJZjULB6s", title: "Supporting Students", subtitle: "Student testimonials" },
       { videoId: "X688BkOwdRI", title: "Supporting Students — Judy (Extended)", subtitle: "Student success" },
       { videoId: "0P3W_MzqY5g", title: "Supporting Students — Marc (Dream Manager)", subtitle: "Student success" },
-      { videoId: "k68E5lc98Qk", title: "Interview 1 — Komen, CompTIA A+ Student", subtitle: "Student interview" },
-      { videoId: "gxwDjeoB4Tg", title: "Interview 2 — Robin, CompTIA A+ Student", subtitle: "Student interview" },
-      { videoId: "Ez9Rg7hwlE0", title: "Interview 3 — Jared, Cybersecurity Intern", subtitle: "Student interview" },
-      { videoId: "4lDqCIw5I1k", title: "Interview 4 — Niyat Tesfatsion", subtitle: "Student interview" },
-
       // Panels + special events (Rick + Cara on camera)
       { videoId: "SbXtXr3bC9c", title: "How to be a Superhero in Times of Chaos", subtitle: "Cara & Rick Barretto live" },
-      { videoId: "wRuarukPGJs", title: "Thriving During Uncertain Times — Panel Discussion", subtitle: "HTA Live" },
-      { videoId: "2YgPC_6c1wM", title: "May The 4th Be With You — Star Wars life lessons for education", subtitle: "HTA special" },
-      { videoId: "PG7l_pgnYzk", title: "Rick + Cara Update and GoFundMe Charity Contest", subtitle: "Community update" },
-
       // ——— Additional HTA content from VGP channel ———
       { videoId: "yTDosGmYFkI", title: "HTA Introduction — Executive Director Sarah Zike on services", subtitle: "Sarah Zike" },
-      { videoId: "eI6u2-BZInc", title: "HTA Virtual Learning Platform Overview", subtitle: "Platform tour" },
-      { videoId: "ayAMxDPdLGo", title: "Enroll in our entry-level CyberSecurity pre-apprenticeship", subtitle: "Enrollment promo" },
-      { videoId: "HMEiJN_5Zx8", title: "New IT / CyberSecurity Job — our Apprentice program (no 4-year degree)", subtitle: "Workforce" },
       { videoId: "_nA9Df3j8wE", title: "Google — new hires don't require a college degree. Apprenticeships work", subtitle: "Industry evidence" },
 
       // CompTIA instructional
-      { videoId: "F245jQ8Qv7Q", title: "CompTIA A+ — Storage Overview", subtitle: "Online instruction" },
-      { videoId: "wQH3oIWYTbo", title: "CompTIA A+ — Networking Introduction", subtitle: "Online instruction" },
-
       // Student success
       { videoId: "-iP3UX6n47w", title: "Dej Afuye — CompTIA A+ Student Success Story", subtitle: "Student testimonial (long-form)" },
       { videoId: "yUWovI1sSH0", title: "Niyat Tesfatsion — CyberSecurity Apprentice at VGP/HTA", subtitle: "Apprentice testimonial" },
@@ -250,10 +204,6 @@ export const pressSections: PressSection[] = [
     videos: [
       { videoId: "NhRa1nr9VPM", title: "Game On — where esports meets education", subtitle: "VGP × Game On" },
       // Yu-Gi-Oh tournament series at Game On Events (September 2023)
-      { videoId: "sy7Xs_D4s7w", title: "Yu-Gi-Oh Card Opening — Ep 1 · Game On Events Tournament", subtitle: "September 2023" },
-      { videoId: "C5Ho9pVBDXQ", title: "Yu-Gi-Oh Card Opening — Ep 2 · Game On Events Tournament", subtitle: "September 2023" },
-      { videoId: "reYrDtNjWRE", title: "Yu-Gi-Oh Card Opening — Ep 3", subtitle: "Game On Events" },
-      { videoId: "ZAUVNeiTuVU", title: "Yu-Gi-Oh Card Opening — Ep 4", subtitle: "Game On Events" },
     ],
   },
   {
