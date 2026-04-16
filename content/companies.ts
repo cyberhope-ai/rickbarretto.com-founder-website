@@ -200,9 +200,20 @@ export const companies: Company[] = [
         "Part of the $25B law enforcement technology industry",
       ],
     },
+    images: [
+      "/companies/irecord/sba-award-announcement.jpg",
+      "/companies/irecord/wsi-team-office.jpg",
+      "/companies/irecord/sba-award-team-podium.jpg",
+      "/companies/irecord/sba-award-team-2.jpg",
+      "/companies/irecord/sba-small-business-of-year-2023.jpg",
+      "/companies/irecord/team-candid-1.jpg",
+      "/companies/irecord/team-candid-2.jpg",
+      "/companies/irecord/award-closeup.jpg",
+      "/companies/irecord/sba-award-plaque.jpg",
+    ],
     websiteUrl: "https://www.arcadeinventors.com/irecord",
     exitNote:
-      "Acquired by Valsoft Corporation (2025) alongside WSI — ~$20M combined. Funded the phoenix of CyberHope AI.",
+      "Acquired by Valsoft Corporation (2025) alongside WSI \u2014 ~$20M combined. Funded the phoenix of CyberHope AI. Named 2023 Indiana SBDC Small Business of the Year \u2014 45% revenue growth 2019\u20132022, international expansion to Canada, Thailand, Egypt.",
   },
 
   {

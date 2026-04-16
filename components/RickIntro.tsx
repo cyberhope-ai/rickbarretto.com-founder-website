@@ -5,7 +5,7 @@ export default function RickIntro() {
         <div>
           <div className="rounded-2xl overflow-hidden bg-slate-100 shadow-lg ring-1 ring-slate-200">
             <img
-              src="/photos/rick-cyberhope-polo-office.jpg"
+              src="/photos/rick-sitting-desk.jpg"
               alt="Rick Barretto"
               className="w-full h-auto object-cover"
             />

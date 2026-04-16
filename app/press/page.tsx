@@ -23,13 +23,34 @@ const tierColor: Record<PressTier, string> = {
   tv: "bg-amber-500 text-amber-950",
 };
 
+const asSeenOn = [
+  { name: "NBC", style: "font-display font-black text-3xl tracking-tight" },
+  { name: "CBS", style: "font-display italic text-3xl tracking-[0.05em]" },
+  { name: "FOX", style: "font-display font-black text-3xl tracking-[-0.05em]" },
+  { name: "G4 TechTV", style: "font-sans font-extrabold text-xl tracking-tight" },
+  { name: "MTV", style: "font-display font-black text-3xl tracking-[-0.08em]" },
+  { name: "Today Show", style: "font-display italic text-xl tracking-tight" },
+  { name: "Good Morning America", style: "font-display font-bold text-sm tracking-[0.15em] uppercase" },
+  { name: "HGTV", style: "font-sans font-extrabold text-2xl tracking-widest" },
+  { name: "PBS", style: "font-sans font-black text-2xl tracking-[0.25em]" },
+  { name: "E!", style: "font-display font-black text-4xl tracking-tight italic" },
+  { name: "Rolling Stone", style: "font-display italic text-lg tracking-tight" },
+  { name: "Billboard", style: "font-sans font-extrabold text-lg tracking-[0.05em] uppercase" },
+  { name: "Fortune", style: "font-display font-black text-lg tracking-[0.2em] uppercase" },
+  { name: "Playboy", style: "font-display font-bold text-xl tracking-[0.1em] uppercase" },
+  { name: "GamePro", style: "font-sans font-black text-lg tracking-tight italic" },
+  { name: "EGM", style: "font-display font-black text-xl tracking-[0.15em]" },
+  { name: "CNET", style: "font-sans font-black text-xl tracking-tight" },
+  { name: "IBJ", style: "font-display font-black text-xl tracking-[0.1em]" },
+];
+
 export default function PressPage() {
   return (
     <>
       <Nav active="/press" />
       <main className="bg-white min-h-screen">
         {/* Hero */}
-        <section className="bg-gradient-to-b from-blue-950 via-blue-900 to-indigo-950 text-white px-6 py-16 md:py-24">
+        <section className="bg-gradient-to-b from-blue-950 via-blue-900 to-indigo-950 text-white px-6 py-16 md:py-20">
           <div className="max-w-6xl mx-auto">
             <p className="font-sans text-xs tracking-widest uppercase text-sky-300 mb-3">
               Press &amp; Media
@@ -38,10 +59,33 @@ export default function PressPage() {
               50+ press features across 35 years.
             </h1>
             <p className="font-sans text-lg md:text-xl text-sky-100 max-w-3xl leading-relaxed">
-              From Billboard and Rolling Stone to NBC and The Today Show —
-              Rick&rsquo;s companies have been covered by major national,
-              specialty, and regional media across gaming, law enforcement,
-              education, and AI.
+              From Billboard and Rolling Stone to NBC and The Today Show
+              &mdash; Rick&rsquo;s companies have been covered by major
+              national, specialty, and regional media across gaming, law
+              enforcement, education, and AI.
+            </p>
+          </div>
+        </section>
+
+        {/* As Seen On — publication wall */}
+        <section className="bg-gradient-to-b from-indigo-950 via-blue-950 to-blue-950 text-white px-6 py-10 md:py-12 border-t border-white/5">
+          <div className="max-w-6xl mx-auto">
+            <p className="font-sans text-[11px] tracking-[0.35em] uppercase text-sky-300/80 text-center mb-6">
+              As seen on
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-5 md:gap-x-10 md:gap-y-6 text-white/90">
+              {asSeenOn.map((p) => (
+                <span
+                  key={p.name}
+                  className={`${p.style} hover:text-white transition whitespace-nowrap`}
+                >
+                  {p.name}
+                </span>
+              ))}
+            </div>
+            <p className="text-center font-sans text-xs text-sky-300/60 mt-6 italic">
+              And {"60+"} more across gaming, law enforcement, and regional
+              press &mdash; scroll for the archive.
             </p>
           </div>
         </section>

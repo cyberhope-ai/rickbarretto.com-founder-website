@@ -42,23 +42,63 @@ export default function Home() {
     <>
       <Nav active="/" />
       <main className="min-h-screen">
-        {/* Hero — The Architect image */}
-        <section className="bg-gradient-to-b from-blue-950 via-blue-900 to-indigo-950">
-          <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
-            <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
-              <Lightbox
-                src="/photos/hero-architect.png"
-                alt="Rick Barretto — The Architect Behind 8 First-in-Category Companies"
-                thumbClassName="w-full h-auto"
-              />
+        {/* Hero — Name, title, open letter, and the polo/desk photo */}
+        <section className="bg-gradient-to-b from-blue-950 via-blue-900 to-indigo-950 text-white">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+            <div className="text-center mb-10 md:mb-14">
+              <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-sky-300 mb-4">
+                The Founder Site of
+              </p>
+              <h1 className="font-display text-5xl md:text-7xl leading-[1.02] tracking-tight mb-5">
+                Rick Barretto
+              </h1>
+              <p className="font-display italic text-xl md:text-2xl text-sky-200 max-w-3xl mx-auto leading-snug">
+                Dreamer. Inventor. Founder. A 35-year serial-entrepreneur story &mdash;
+                 16 companies, 8 first-in-category, 14 industries, no VC.
+              </p>
             </div>
-            <p className="text-center mt-6 font-sans text-base md:text-lg text-sky-100 max-w-3xl mx-auto leading-relaxed">
-              Rick Barretto grew up in Valencia, California, then spent the rest
-              of his career building things in Indianapolis, IN &mdash;
-              &ldquo;India-No-Place for technology,&rdquo; as he puts it &mdash;
-              all without traditional investors, VC, or a vibrant Silicon Valley
-              tech scene. Just a dream and a passion to make a difference.
-            </p>
+
+            <div className="grid md:grid-cols-[5fr_6fr] gap-8 md:gap-12 items-center">
+              <div className="mx-auto md:mx-0 w-full max-w-md">
+                <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+                  <Lightbox
+                    src="/photos/rick-cyberhope-polo-office.jpg"
+                    alt="Rick Barretto"
+                    thumbClassName="w-full h-auto"
+                  />
+                </div>
+              </div>
+
+              <div className="font-sans text-base md:text-lg text-sky-100 leading-relaxed space-y-4">
+                <p className="font-sans text-xs tracking-widest uppercase text-sky-300 mb-1">
+                  An open letter
+                </p>
+                <p>
+                  Welcome. This site is a working archive of a career spent
+                  building things in Indianapolis &mdash;
+                  &ldquo;India-No-Place for technology,&rdquo; as I like to
+                  call it &mdash; without VC, without Silicon Valley, and
+                  without anyone in my corner except my parents who took out
+                  a second mortgage to fund the first idea nobody believed in.
+                </p>
+                <p>
+                  Everything you&rsquo;ll see here &mdash; the companies, the
+                  inventions, the press, the SkillDNA &mdash; came out of a
+                  simple belief that if you see something five to seven years
+                  before anyone else, build the platform that makes it
+                  possible, and let the uses invent themselves.
+                </p>
+                <p>
+                  My hope is that some small piece of this is useful to
+                  you &mdash; that it sparks an idea, validates a hunch, or
+                  reminds you that you don&rsquo;t need permission to build
+                  what you can already see. Enjoy the ride.
+                </p>
+                <p className="font-display italic text-sky-200 pt-1">
+                  &mdash; Rick
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 

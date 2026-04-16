@@ -209,10 +209,22 @@ export const pressSections: PressSection[] = [
   },
   {
     companyId: "irecord",
-    company: "iRecord",
+    company: "iRecord / WSI Technologies",
     summary:
-      "Industry and law-enforcement trade press. Deeper archive pending — web crawl TBD across LE publications and state-agency announcements.",
-    press: [],
+      "Law-enforcement trade press and state business recognition. WSI Technologies (parent of iRecord + Evertel) was named 2023 Small Business of the Year by the Indiana SBDC \u2014 45% revenue growth 2019\u20132022, international expansion to Canada, Thailand, and Egypt. Additional industry-publication archive pending.",
+    press: [
+      {
+        publication: "Indiana SBDC / IEDC",
+        tier: "regional",
+        pdfUrl: "/press/irecord/wsi-sba-small-business-of-year-2023.pdf",
+        note: "May 2023 \u2014 2023 Small Business of the Year award announcement",
+      },
+      {
+        publication: "Indiana Small Business Week",
+        tier: "regional",
+        note: "May 11, 2023 \u2014 Award luncheon recognition",
+      },
+    ],
     videos: [],
   },
   {

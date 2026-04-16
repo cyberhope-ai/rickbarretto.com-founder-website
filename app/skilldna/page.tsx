@@ -94,35 +94,6 @@ export default function SkillDNAPage() {
           </div>
         </section>
 
-        {/* Screenshots */}
-        <section className="px-6 py-14 md:py-16 bg-white border-b border-slate-200">
-          <div className="max-w-6xl mx-auto">
-            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3 text-center">
-              A peek at the build
-            </p>
-            <h2 className="font-display text-2xl md:text-4xl text-slate-900 mb-8 text-center leading-tight">
-              Screenshots from the live app.
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-              {screenshots.map((s, i) => (
-                <figure key={i} className="space-y-2">
-                  <div className="aspect-[16/10] rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-                    <Lightbox src={s.src} alt={s.caption} />
-                  </div>
-                  <figcaption className="font-sans text-sm text-slate-600 px-1">
-                    {s.caption}
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-            <p className="text-center font-sans text-sm text-slate-500 mt-6">
-              Click any screenshot to enlarge. The production app is under
-              active development — these views are from the simulated
-              reference build.
-            </p>
-          </div>
-        </section>
-
         {/* Story placeholder — "Why I made it" */}
         <section className="px-6 py-14 md:py-16 bg-slate-50 border-b border-slate-200">
           <div className="max-w-3xl mx-auto">
@@ -133,46 +104,69 @@ export default function SkillDNAPage() {
               The backstory is coming.
             </h2>
             <p className="font-sans text-slate-700 leading-relaxed">
-              There&rsquo;s a specific reason SkillDNA exists — a pattern Rick
-              has watched play out across 35 years of hiring, training,
-              mentoring, and running a nonprofit that serves underrepresented
-              talent. That story goes here, in his own words. Stay tuned.
+              There&rsquo;s a specific reason SkillDNA exists &mdash; a
+              pattern Rick has watched play out across 35 years of hiring,
+              training, mentoring, and running a nonprofit that serves
+              underrepresented talent. That story goes here, in his own
+              words. Stay tuned.
             </p>
           </div>
         </section>
 
-        {/* The problem */}
+        {/* The problem — paired with screenshot 01 */}
         <section className="px-6 py-16 md:py-20 bg-white">
-          <div className="max-w-4xl mx-auto">
-            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3">
-              The problem
-            </p>
-            <h2 className="font-display text-3xl md:text-5xl text-slate-900 leading-tight mb-6">
-              Résumés are self-reported fiction.
-            </h2>
-            <p className="font-sans text-lg md:text-xl text-slate-700 leading-relaxed mb-4">
-              Personal capability is scattered across LinkedIn, PDFs,
-              certificates, project docs, and the thousands of small wins that
-              never make it onto a page. When it&rsquo;s time to hire, grow,
-              or switch careers, the signal is drowned in paperwork.
-            </p>
-            <p className="font-sans text-lg md:text-xl text-slate-700 leading-relaxed">
-              SkillDNA replaces that mess with one living record of your
-              evolving capability — <strong>evidence-backed, verified, and
-              portable</strong>.
-            </p>
+          <div className="max-w-6xl mx-auto grid md:grid-cols-[5fr_6fr] gap-10 md:gap-14 items-center">
+            <div>
+              <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3">
+                The problem
+              </p>
+              <h2 className="font-display text-3xl md:text-5xl text-slate-900 leading-tight mb-6">
+                R&eacute;sum&eacute;s are self-reported fiction.
+              </h2>
+              <p className="font-sans text-lg text-slate-700 leading-relaxed mb-4">
+                Personal capability is scattered across LinkedIn, PDFs,
+                certificates, project docs, and the thousands of small wins
+                that never make it onto a page. When it&rsquo;s time to hire,
+                grow, or switch careers, the signal is drowned in paperwork.
+              </p>
+              <p className="font-sans text-lg text-slate-700 leading-relaxed">
+                SkillDNA replaces that mess with one living record of your
+                evolving capability &mdash; <strong>evidence-backed,
+                verified, and portable</strong>.
+              </p>
+            </div>
+            <figure className="space-y-2">
+              <div className="aspect-[16/10] rounded-xl overflow-hidden border border-slate-200 shadow-md hover:shadow-lg transition">
+                <Lightbox src={screenshots[0].src} alt={screenshots[0].caption} />
+              </div>
+              <figcaption className="font-sans text-xs text-slate-500 px-1">
+                {screenshots[0].caption}
+              </figcaption>
+            </figure>
           </div>
         </section>
 
-        {/* How it works */}
+        {/* How it works — paired with screenshot 02 */}
         <section className="px-6 py-16 md:py-20 bg-slate-50">
-          <div className="max-w-5xl mx-auto">
-            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3 text-center">
-              How it works
-            </p>
-            <h2 className="font-display text-3xl md:text-5xl text-slate-900 leading-tight mb-12 text-center">
-              Four steps. No manual entry.
-            </h2>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-[6fr_5fr] gap-10 md:gap-14 items-center mb-12">
+              <figure className="space-y-2 order-2 md:order-1">
+                <div className="aspect-[16/10] rounded-xl overflow-hidden border border-slate-200 shadow-md hover:shadow-lg transition">
+                  <Lightbox src={screenshots[1].src} alt={screenshots[1].caption} />
+                </div>
+                <figcaption className="font-sans text-xs text-slate-500 px-1">
+                  {screenshots[1].caption}
+                </figcaption>
+              </figure>
+              <div className="order-1 md:order-2">
+                <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3">
+                  How it works
+                </p>
+                <h2 className="font-display text-3xl md:text-5xl text-slate-900 leading-tight">
+                  Four steps. No manual entry.
+                </h2>
+              </div>
+            </div>
             <div className="grid md:grid-cols-2 gap-4 md:gap-5">
               {howItWorks.map((s) => (
                 <div
@@ -194,15 +188,27 @@ export default function SkillDNAPage() {
           </div>
         </section>
 
-        {/* Features */}
+        {/* Features — paired with screenshot 03 */}
         <section className="px-6 py-16 md:py-20 bg-white">
           <div className="max-w-6xl mx-auto">
-            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3">
-              What&rsquo;s inside
-            </p>
-            <h2 className="font-display text-3xl md:text-5xl text-slate-900 leading-tight mb-12">
-              A NASA dashboard for humans.
-            </h2>
+            <div className="grid md:grid-cols-[6fr_5fr] gap-10 md:gap-14 items-center mb-12">
+              <div>
+                <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3">
+                  What&rsquo;s inside
+                </p>
+                <h2 className="font-display text-3xl md:text-5xl text-slate-900 leading-tight">
+                  A NASA dashboard for humans.
+                </h2>
+              </div>
+              <figure className="space-y-2">
+                <div className="aspect-[16/10] rounded-xl overflow-hidden border border-slate-200 shadow-md hover:shadow-lg transition">
+                  <Lightbox src={screenshots[2].src} alt={screenshots[2].caption} />
+                </div>
+                <figcaption className="font-sans text-xs text-slate-500 px-1">
+                  {screenshots[2].caption}
+                </figcaption>
+              </figure>
+            </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {features.map((f) => (
                 <div
@@ -221,10 +227,38 @@ export default function SkillDNAPage() {
           </div>
         </section>
 
+        {/* Evidence + growth — screenshots 04 + 05 */}
+        <section className="px-6 py-16 md:py-20 bg-slate-50 border-y border-slate-200">
+          <div className="max-w-6xl mx-auto">
+            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3 text-center">
+              Evidence + growth over time
+            </p>
+            <h2 className="font-display text-2xl md:text-4xl text-slate-900 mb-10 text-center leading-tight">
+              Every claim traces to a source. The dashboard evolves with you.
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+              {screenshots.slice(3).map((s, i) => (
+                <figure key={i} className="space-y-2">
+                  <div className="aspect-[16/10] rounded-xl overflow-hidden border border-slate-200 shadow-md hover:shadow-lg transition bg-white">
+                    <Lightbox src={s.src} alt={s.caption} />
+                  </div>
+                  <figcaption className="font-sans text-sm text-slate-600 px-1">
+                    {s.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+            <p className="text-center font-sans text-sm text-slate-500 mt-6">
+              Click any screenshot to enlarge. The production app is in active
+              development &mdash; these views are from the reference build.
+            </p>
+          </div>
+        </section>
+
         {/* Who it's for */}
-        <section className="px-6 py-16 md:py-20 bg-slate-50">
+        <section className="px-6 py-16 md:py-20 bg-white">
           <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
-            <div className="bg-white rounded-xl p-8 border border-slate-200">
+            <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
               <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-2">
                 For individuals
               </p>
@@ -239,7 +273,7 @@ export default function SkillDNAPage() {
                 Signup coming soon.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-8 border border-slate-200">
+            <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
               <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-2">
                 For employers
               </p>
@@ -247,14 +281,14 @@ export default function SkillDNAPage() {
                 Evidence-backed hiring and team formation.
               </h3>
               <p className="font-sans text-slate-700 leading-relaxed mb-6">
-                Replace résumé fiction with verified reality. Form teams by
-                actual capability. Workforce analytics at scale.
+                Replace r&eacute;sum&eacute; fiction with verified reality.
+                Form teams by actual capability. Workforce analytics at scale.
               </p>
               <a
                 href="https://cyberhopeai.com"
                 className="inline-flex items-center gap-2 text-blue-700 hover:text-blue-900 font-sans font-semibold underline underline-offset-4"
               >
-                Talk to enterprise →
+                Talk to enterprise &rarr;
               </a>
             </div>
           </div>

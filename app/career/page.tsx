@@ -39,6 +39,42 @@ export default function CareerPage() {
 
         <RickIntro />
 
+        {/* Founder quote — AI + the journey */}
+        <section className="bg-gradient-to-b from-blue-950 via-indigo-950 to-blue-950 text-white px-6 py-16 md:py-20 border-b border-slate-200">
+          <div className="max-w-4xl mx-auto">
+            <p className="font-sans text-xs tracking-widest uppercase text-sky-300 mb-4 text-center">
+              In his own words
+            </p>
+            <blockquote className="space-y-5">
+              <p className="font-display italic text-lg md:text-xl text-sky-100 leading-relaxed">
+                &ldquo;As a coder growing up, I was limited by time, budget,
+                and the specialty-partner relationships I could find &mdash;
+                barriers that stifled creativity and made every vision take
+                years longer than it needed to. No traditional capital.
+                Self-funded everything. No VCs, no friends in Silicon Valley
+                starting public companies.
+              </p>
+              <p className="font-display italic text-lg md:text-xl text-sky-100 leading-relaxed">
+                The advent of AI has utterly shattered the distance between
+                idea and manifestation. Over 100 separate GitHub projects
+                &mdash; pieces of a puzzle for PrecognitionOS that had never
+                been created &mdash; built in a fraction of the time it once
+                would have taken.
+              </p>
+              <p className="font-display italic text-lg md:text-xl text-sky-100 leading-relaxed">
+                My outlook: anyone who takes the time to learn to interact
+                with this technology &mdash; to integrate it into their daily
+                workflow as a complement to their natural abilities &mdash;
+                will see the same kind of personal and professional
+                advancement. It&rsquo;s been an unbelievable ride.&rdquo;
+              </p>
+              <cite className="block font-sans text-sm text-sky-300 not-italic tracking-wide pt-2">
+                &mdash; Rick Barretto, Founder &amp; CEO, CyberHope AI
+              </cite>
+            </blockquote>
+          </div>
+        </section>
+
         {/* Timeline */}
         <section className="px-6 py-16 md:py-20">
           <div className="max-w-5xl mx-auto">
