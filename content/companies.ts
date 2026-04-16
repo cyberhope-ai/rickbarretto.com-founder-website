@@ -146,6 +146,9 @@ export const companies: Company[] = [
       ],
     },
     images: [
+      "/companies/dreamauthentics/playboy-hef-laughing-holly-arcade.jpg",
+      "/companies/dreamauthentics/playboy-pro-group-shot.jpg",
+      "/companies/dreamauthentics/playboy-rick-hef-holly-playing.jpg",
       "/companies/dreamauthentics/playboy-hef-pacman-arcade.jpg",
       "/companies/dreamauthentics/playboy-rick-hef-girls.jpg",
       "/companies/dreamauthentics/playboy-rick-girls-next-door.jpg",
