@@ -154,6 +154,7 @@ export const companies: Company[] = [
       "/companies/dreamauthentics/playboy-rick-hef-candid.jpg",
       "/companies/dreamauthentics/playboy-mansion-concert-tent.jpg",
       "/companies/dreamauthentics/playboy-rick-game-room.jpg",
+      "/companies/dreamauthentics/playboy-cara-ludacris.jpg",
     ],
     moreImagesUrl: "/press",
     websiteUrl: "https://www.arcadeinventors.com/dreamauthentics",
