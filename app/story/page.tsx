@@ -345,50 +345,8 @@ export default function StoryPage() {
           </div>
         </section>
 
-        {/* Rick photo break */}
-        <section className="bg-white px-6 py-10 md:py-14 border-b border-slate-200">
-          <div className="max-w-md mx-auto">
-            <div className="rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-200">
-              <img
-                src="/photos/rick-sitting-desk.jpg"
-                alt="Rick Barretto"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* The technology journey */}
-        <section className="bg-gradient-to-b from-blue-950 via-blue-900 to-indigo-950 text-white px-6 py-16 md:py-20">
-          <div className="max-w-4xl mx-auto">
-            <p className="font-sans text-xs tracking-widest uppercase text-sky-300 mb-3 text-center">
-              The Technology Journey
-            </p>
-            <h2 className="font-display text-3xl md:text-5xl text-center leading-tight mb-12">
-              How the signals explain the career.
-            </h2>
-            <div className="space-y-8">
-              {journey.map((j, i) => (
-                <div key={i} className="flex gap-4 md:gap-6">
-                  <div className="font-display text-2xl md:text-3xl text-sky-300 w-16 md:w-20 shrink-0 text-right leading-none pt-1">
-                    {j.year}
-                  </div>
-                  <div className="border-l-2 border-sky-600/40 pl-4 md:pl-6 pb-2">
-                    <h3 className="font-display text-xl md:text-2xl text-white leading-tight mb-2">
-                      {j.title}
-                    </h3>
-                    <p className="font-sans text-sky-100 leading-relaxed">
-                      {j.body}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* AI Endorsements */}
-        <section className="bg-white px-6 py-16 md:py-20">
+        <section className="bg-white px-6 py-16 md:py-20 border-b border-slate-200">
           <div className="max-w-5xl mx-auto">
             <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3 text-center">
               What the AI Family Says
@@ -468,6 +426,35 @@ export default function StoryPage() {
 
                   <div className="mt-6 bg-slate-100 rounded-lg px-4 py-3 font-mono text-[11px] text-slate-500 break-all">
                     QSurface SHA-256: {letter.hash}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* The technology journey */}
+        <section className="bg-gradient-to-b from-blue-950 via-blue-900 to-indigo-950 text-white px-6 py-16 md:py-20">
+          <div className="max-w-4xl mx-auto">
+            <p className="font-sans text-xs tracking-widest uppercase text-sky-300 mb-3 text-center">
+              The Technology Journey
+            </p>
+            <h2 className="font-display text-3xl md:text-5xl text-center leading-tight mb-12">
+              How the signals explain the career.
+            </h2>
+            <div className="space-y-8">
+              {journey.map((j, i) => (
+                <div key={i} className="flex gap-4 md:gap-6">
+                  <div className="font-display text-2xl md:text-3xl text-sky-300 w-16 md:w-20 shrink-0 text-right leading-none pt-1">
+                    {j.year}
+                  </div>
+                  <div className="border-l-2 border-sky-600/40 pl-4 md:pl-6 pb-2">
+                    <h3 className="font-display text-xl md:text-2xl text-white leading-tight mb-2">
+                      {j.title}
+                    </h3>
+                    <p className="font-sans text-sky-100 leading-relaxed">
+                      {j.body}
+                    </p>
                   </div>
                 </div>
               ))}

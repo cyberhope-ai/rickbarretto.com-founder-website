@@ -18,7 +18,7 @@ export default function Nav({ active }: { active?: string }) {
           href="/"
           className="font-display text-lg tracking-tight text-slate-900 hover:text-blue-900 transition"
         >
-          Rick Barretto
+          rickbarretto.com
         </Link>
         <ul className="flex items-center gap-1 text-sm">
           {navItems.map((item) => {
