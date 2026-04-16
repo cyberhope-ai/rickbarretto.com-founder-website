@@ -145,48 +145,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Rick's quote — AI + the founder journey */}
-        <section className="bg-gradient-to-b from-blue-950 via-indigo-950 to-blue-950 text-white px-6 py-16 md:py-20">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-[1fr_2fr] gap-8 items-center">
-              <div className="mx-auto md:mx-0 w-48 md:w-full max-w-[240px]">
-                <img
-                  src="/photos/rick-suit-executive.jpg"
-                  alt="Rick Barretto"
-                  className="rounded-2xl shadow-xl ring-1 ring-white/10 w-full"
-                />
-              </div>
-              <blockquote>
-                <p className="font-display italic text-lg md:text-xl text-sky-100 leading-relaxed mb-4">
-                  &ldquo;As a coder growing up, I was limited by time, budget,
-                  and the specialty-partner relationships I could find — barriers
-                  that stifled creativity and made every vision take years longer
-                  than it needed to. No traditional capital. Self-funded
-                  everything. No VCs, no friends in Silicon Valley starting
-                  public companies.
-                </p>
-                <p className="font-display italic text-lg md:text-xl text-sky-100 leading-relaxed mb-4">
-                  The advent of AI has utterly shattered the distance between
-                  idea and manifestation. Over 100 separate GitHub projects —
-                  pieces of a puzzle for PrecognitionOS that had never been
-                  created — built in a fraction of the time it once would
-                  have taken.
-                </p>
-                <p className="font-display italic text-lg md:text-xl text-sky-100 leading-relaxed mb-6">
-                  My outlook: anyone who takes the time to learn to interact
-                  with this technology — to integrate it into their daily
-                  workflow as a complement to their natural abilities — will see
-                  the same kind of personal and professional advancement.
-                  It&rsquo;s been an unbelievable ride.&rdquo;
-                </p>
-                <cite className="font-sans text-sm text-sky-300 not-italic tracking-wide">
-                  — Rick Barretto, Founder &amp; CEO, CyberHope AI
-                </cite>
-              </blockquote>
-            </div>
-          </div>
-        </section>
-
         {/* Evolution — strategic timeline image */}
         <section className="bg-gradient-to-b from-blue-950 via-indigo-950 to-blue-950 px-6 py-14 md:py-16">
           <div className="max-w-5xl mx-auto">
