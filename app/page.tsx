@@ -52,8 +52,12 @@ export default function Home() {
                 thumbClassName="w-full h-auto"
               />
             </div>
-            <p className="text-center mt-6 font-display italic text-xl md:text-3xl text-sky-200">
-              Turning dreams into reality.
+            <p className="text-center mt-6 font-sans text-base md:text-lg text-sky-100 max-w-3xl mx-auto leading-relaxed">
+              Rick Barretto grew up in Valencia, California, then spent the rest
+              of his career building things in Indianapolis, IN &mdash;
+              &ldquo;India-No-Place for technology,&rdquo; as he puts it &mdash;
+              all without traditional investors, VC, or a vibrant Silicon Valley
+              tech scene. Just a dream and a passion to make a difference.
             </p>
           </div>
         </section>
