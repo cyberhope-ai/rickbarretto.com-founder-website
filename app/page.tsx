@@ -74,26 +74,41 @@ export default function Home() {
                   An open letter
                 </p>
                 <p>
-                  Welcome. This site is a working archive of a career spent
-                  building things in Indianapolis &mdash;
-                  &ldquo;India-No-Place for technology,&rdquo; as I like to
-                  call it &mdash; without VC, without Silicon Valley, and
-                  without anyone in my corner except my parents who took out
-                  a second mortgage to fund the first idea nobody believed in.
+                  Welcome! This site is a working archive of a career spent
+                  building things that had never existed &mdash; other than
+                  in my imagination &mdash; driven by a desire to create
+                  platforms and systems that help people lead happy,
+                  fulfilled lives.
                 </p>
                 <p>
                   Everything you&rsquo;ll see here &mdash; the companies, the
                   inventions, the press, the SkillDNA &mdash; came out of a
-                  simple belief that if you see something five to seven years
-                  before anyone else, build the platform that makes it
-                  possible, and let the uses invent themselves.
+                  simple belief that if you see a need and can create
+                  something that solves a problem before anyone else, build
+                  the platform that makes it possible, and let the uses
+                  invent themselves.
                 </p>
                 <p>
-                  My hope is that some small piece of this is useful to
-                  you &mdash; that it sparks an idea, validates a hunch, or
-                  reminds you that you don&rsquo;t need permission to build
-                  what you can already see. Enjoy the ride.
+                  My hope is that some small piece of this life&rsquo;s work
+                  is inspiring, interesting, or useful to you &mdash; that it
+                  sparks an idea, validates a hunch, or reminds you that you
+                  don&rsquo;t need permission to build what you can already
+                  see.
                 </p>
+                <p>Perhaps James Michener said it best:</p>
+                <blockquote className="border-l-2 border-sky-400/40 pl-4 italic text-sky-200/90 text-[0.95em] leading-relaxed">
+                  &ldquo;The master in the art of living makes little
+                  distinction between his work and his play, his labor and
+                  his leisure, his mind and his body, his information and
+                  his recreation, his love and his religion. He hardly knows
+                  which is which. He simply pursues his vision of excellence
+                  at whatever he does, leaving others to decide whether he
+                  is working or playing. To him he&rsquo;s always doing
+                  both.&rdquo;
+                  <footer className="not-italic text-xs tracking-wide text-sky-300/80 mt-2">
+                    &mdash; James Michener
+                  </footer>
+                </blockquote>
                 <p className="font-display italic text-sky-200 pt-1">
                   &mdash; Rick
                 </p>

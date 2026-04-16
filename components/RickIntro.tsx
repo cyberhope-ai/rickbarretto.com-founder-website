@@ -21,9 +21,8 @@ export default function RickIntro() {
           <div className="space-y-4 text-slate-700 font-sans text-base md:text-lg leading-relaxed">
             <p>
               Rick Barretto grew up in Valencia, California, then spent the rest
-              of his career building things in Indianapolis — &ldquo;India-No-Place
-              for technology,&rdquo; as he puts it — all without outside
-              investors until 2026.
+              of his career building things in Indianapolis &mdash; all without
+              outside investors until 2026.
             </p>
             <p>
               From medical dictation systems in 1990 to the world&rsquo;s first

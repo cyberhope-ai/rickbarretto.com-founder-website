@@ -15,8 +15,8 @@ export const chapters: Chapter[] = [
   {
     id: "valencia",
     era: "1970s — 1980s",
-    title: "From Valencia to India-No-Place",
-    lede: "A dreamer from Southern California, transplanted at ten to Indianapolis — \"India-No-place for technology\" — who never stopped seeing things the way other people didn't.",
+    title: "From Valencia to Indianapolis",
+    lede: "A dreamer from Southern California, transplanted at ten to Indianapolis \u2014 who never stopped seeing things the way other people didn't.",
     body: [
       "Rick's mother called him Peter Pan. Told him he must have been switched at birth. That he came from a different planet.",
       "She wasn't wrong about the not-fitting-in part. But Peter Pan didn't grow up to chase fairy dust — he grew up to build real things in a part of the country that wasn't supposed to produce them.",
