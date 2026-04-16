@@ -25,6 +25,39 @@ const cognitive = [
   { label: "Dominance (DISC)", value: "73", unit: "results-driven" },
 ];
 
+const parallels = [
+  {
+    figures: "Claude Shannon",
+    trait: "Foundational Systems Thinker",
+    desc: "The closest match. Like Shannon, Rick applies rigorous logic to complex, seemingly chaotic domains — creating fundamental frameworks that unlock innovation for generations.",
+  },
+  {
+    figures: "Steve Jobs & Coco Chanel",
+    trait: "Systematic Creativity",
+    desc: "A shared ability to connect diverse experiences and synthesize them into groundbreaking new systems that feel intuitively correct and obvious in retrospect.",
+  },
+  {
+    figures: "Thomas Edison & Henry Ford",
+    trait: "Pragmatic Innovation at Scale",
+    desc: "Genius lies less in pure invention and more in systematically improving existing concepts to make them commercially viable, scalable, and practically useful to the masses.",
+  },
+  {
+    figures: "Walt Disney & Martin Luther King Jr.",
+    trait: "Visionary Leadership",
+    desc: "A shared capacity to imagine what does not yet exist and articulate that vision with such clarity that others are inspired to embrace and build it.",
+  },
+  {
+    figures: "Jack Welch & Charles Frohman",
+    trait: "Talent Cultivation",
+    desc: "A strength in developing people, nurturing their competencies and capabilities to help them grow into significant contributors and stars in their own right.",
+  },
+  {
+    figures: "John D. Rockefeller & The Dalai Lama",
+    trait: "Foundational Stability",
+    desc: "The ability to maintain a calm, emotionally consistent presence that instills deep trust and confidence, creating a stable foundation for teams to operate effectively.",
+  },
+];
+
 const journey = [
   {
     year: "1984",
@@ -266,6 +299,55 @@ export default function StoryPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Historical parallels */}
+        <section className="bg-slate-50 px-6 py-14 md:py-16 border-b border-slate-200">
+          <div className="max-w-5xl mx-auto">
+            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-3 text-center">
+              Historical &amp; Modern Parallels
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl text-slate-900 text-center leading-tight mb-4">
+              Patterns that echo through history.
+            </h2>
+            <p className="font-sans text-slate-600 text-center max-w-3xl mx-auto mb-10">
+              SkillDNA cross-references assessment data against historical
+              figures who share convergent cognitive and leadership profiles.
+              These parallels are generated impartially by AI — Rick did not
+              choose them.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {parallels.map((p, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-xl border border-slate-200 p-5 md:p-6 hover:border-blue-300 hover:shadow-sm transition"
+                >
+                  <p className="font-display text-lg md:text-xl text-blue-900 leading-tight mb-1">
+                    {p.figures}
+                  </p>
+                  <p className="font-sans text-xs tracking-widest uppercase text-slate-500 mb-3">
+                    {p.trait}
+                  </p>
+                  <p className="font-sans text-sm text-slate-700 leading-relaxed">
+                    {p.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Rick photo break */}
+        <section className="bg-white px-6 py-10 md:py-14 border-b border-slate-200">
+          <div className="max-w-md mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-200">
+              <img
+                src="/photos/rick-sitting-desk.jpg"
+                alt="Rick Barretto"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </section>
