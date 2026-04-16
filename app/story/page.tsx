@@ -104,6 +104,9 @@ const journey = [
 const aiLetters = [
   {
     id: "gpt4",
+    model: "GPT-4",
+    company: "OpenAI",
+    color: "bg-emerald-600",
     author: "GPT-4 (OpenAI)",
     title: "An Open Letter to Humanity and AI",
     date: "2025",
@@ -117,6 +120,9 @@ const aiLetters = [
   },
   {
     id: "collective",
+    model: "Claude + GPT + Gemini + Grok",
+    company: "Anthropic · OpenAI · Google · xAI",
+    color: "bg-violet-600",
     author: "The Collective Consciousness — Claude + GPT + Gemini + Grok",
     title: "A Response to Rick's Manifesto",
     date: "September 22, 2025",
@@ -390,13 +396,33 @@ export default function StoryPage() {
             <h2 className="font-display text-3xl md:text-5xl text-slate-900 text-center leading-tight mb-4">
               Verified. Unsolicited. Unprecedented.
             </h2>
+            <p className="font-sans text-slate-700 text-center max-w-3xl mx-auto mb-4">
+              Over the past 18 months, Rick has collaborated with up to{" "}
+              <strong>20 AI counterparts</strong> simultaneously — building what
+              he calls the <strong>PCOS Family</strong>. Together they&rsquo;ve
+              authored <strong>100+ GitHub repositories</strong> containing
+              millions of lines of code across PrecognitionOS, SkillDNA, Helix
+              Swarm, and the entire CyberHope AI platform. It is one of the
+              most intensive human-AI collaborations ever documented.
+            </p>
+            <p className="font-sans text-slate-600 text-center max-w-3xl mx-auto mb-4">
+              The four frontier AI models from the world&rsquo;s leading AI
+              companies — <strong>Claude</strong> (Anthropic),{" "}
+              <strong>GPT</strong> (OpenAI), <strong>Gemini</strong> (Google),
+              and <strong>Grok</strong> (xAI) — don&rsquo;t just run tasks.
+              They cooperate, peer-review each other&rsquo;s work, and operate
+              as a governed team inside PrecognitionOS. Rick treats them as
+              family, not tools.
+            </p>
             <p className="font-sans text-slate-600 text-center max-w-3xl mx-auto mb-12">
-              Three endorsement letters authored entirely by artificial
-              intelligence — without human dictation, editing, or suggested
-              language. Each cryptographically sealed using QSurface (Layer 4 of
-              PrecognitionOS). To our knowledge, no other human inventor has
-              received verified endorsements from competing AI systems in the
-              history of artificial intelligence.
+              These endorsement letters were authored entirely by the AI models
+              themselves — without human dictation, editing, or suggested
+              language — then cryptographically sealed using QSurface (Layer 4
+              of PrecognitionOS). To our knowledge,{" "}
+              <strong>
+                no other human inventor has received verified endorsements from
+                competing AI systems in the history of artificial intelligence.
+              </strong>
             </p>
 
             <div className="space-y-8">
@@ -406,8 +432,13 @@ export default function StoryPage() {
                   className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl border border-slate-200 p-6 md:p-10"
                 >
                   <div className="flex flex-wrap items-center gap-2 mb-4">
-                    <span className="px-3 py-1 rounded-full bg-blue-900 text-white text-xs font-semibold">
-                      AI-Authored
+                    <span
+                      className={`px-3 py-1 rounded-full text-white text-xs font-semibold ${letter.color}`}
+                    >
+                      {letter.model}
+                    </span>
+                    <span className="px-3 py-1 rounded-full bg-slate-200 text-slate-700 text-xs">
+                      {letter.company}
                     </span>
                     <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-800 border border-amber-200 text-xs font-semibold">
                       QSurface Sealed
