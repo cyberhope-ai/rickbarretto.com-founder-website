@@ -200,6 +200,7 @@ export const pressSections: PressSection[] = [
     press: [
       { publication: "Indianapolis Business Journal — COVER", tier: "tier1", pdfUrl: "/press/game-on-events/ibj-esports-cover-dec-2017.pdf", note: "December 4–10, 2017 — Esports Explode" },
       { publication: "IBJ — Esports Becoming Global Sensation", tier: "tier1", pdfUrl: "/press/game-on-events/ibj-esports-global-sensation-dec-2017.pdf", note: "December 2, 2017" },
+      { publication: "Official Press Release — Game On Launch", tier: "regional", pdfUrl: "/press/game-on-events/press-release-game-on-launch-sept-2017.pdf", note: "September 16, 2017 — Mayor Cook + Grand Park Field House" },
       { publication: "Hamilton County Reporter", tier: "regional", note: "Mayor Cook + Game On launch" },
     ],
     videos: [
