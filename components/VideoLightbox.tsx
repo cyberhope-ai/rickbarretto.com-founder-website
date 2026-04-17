@@ -92,7 +92,7 @@ export default function VideoLightbox({
               src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
               title={title}
               className="w-full h-full rounded-xl shadow-2xl"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="autoplay; encrypted-media; picture-in-picture"
               allowFullScreen
             />
           </div>
