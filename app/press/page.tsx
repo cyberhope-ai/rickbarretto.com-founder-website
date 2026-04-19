@@ -126,7 +126,6 @@ export default function PressPage() {
                             {items.map((p, i) => {
                               const pill = (
                                 <div
-                                  {/* HIGH-3 fix: py-3 on mobile for 44px+ tap target height */}
                                   className={`h-full px-3 py-3 sm:py-2.5 rounded-lg text-sm font-sans flex items-start gap-2 leading-snug ${tierColor[p.tier]} ${p.pdfUrl ? "cursor-pointer hover:brightness-110 hover:-translate-y-0.5 transition" : ""}`}
                                 >
                                   {p.pdfUrl && (
@@ -139,7 +138,6 @@ export default function PressPage() {
                                       {p.publication}
                                     </span>
                                     {p.note && (
-                                      {/* HIGH-3 fix: text-[11px]→text-xs (article note span) */}
                                       <span className="text-xs opacity-75 block mt-0.5">
                                         {p.note}
                                       </span>

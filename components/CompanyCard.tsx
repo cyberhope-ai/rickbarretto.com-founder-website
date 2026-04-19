@@ -66,8 +66,7 @@ export default function CompanyCard({ c }: { c: Company }) {
         <div className="flex-1 min-w-0">
           <div className="flex flex-wrap items-center gap-2 mb-2">
             <span
-              {/* MED-3 fix: text-[10px]→text-[11px], py-0.5→py-1 for taller badge tap target */}
-              className={`text-[11px] font-semibold uppercase tracking-wider px-2 py-1 rounded-full border ${statusColors[c.status]}`}
+              className={`text-xs font-semibold uppercase tracking-wider px-2 py-1 rounded-full border ${statusColors[c.status]}`}
             >
               {statusLabel[c.status]}
             </span>
@@ -75,8 +74,7 @@ export default function CompanyCard({ c }: { c: Company }) {
               {yearRange}
             </span>
             {c.firstInCategory && (
-              {/* MED-3 fix: text-[10px]→text-[11px], py-0.5→py-1 */}
-              <span className="text-[11px] font-semibold uppercase tracking-wider px-2 py-1 rounded-full bg-yellow-100 text-yellow-800 border border-yellow-200">
+              <span className="text-xs font-semibold uppercase tracking-wider px-2 py-1 rounded-full bg-yellow-100 text-yellow-800 border border-yellow-200">
                 ★ First in Category
               </span>
             )}
