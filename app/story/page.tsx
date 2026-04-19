@@ -279,7 +279,8 @@ export default function StoryPage() {
                   <div className="font-display text-4xl md:text-5xl text-blue-900 leading-none mb-1">
                     {s.score}
                   </div>
-                  <div className="font-sans text-[10px] tracking-widest uppercase text-slate-500 mb-2">
+                  {/* HIGH-2 fix: text-[10px]→text-xs (12px floor) */}
+                  <div className="font-sans text-xs tracking-widest uppercase text-slate-500 mb-2">
                     / {s.max}
                   </div>
                   <div className="font-sans text-sm font-semibold text-slate-800">
@@ -424,7 +425,8 @@ export default function StoryPage() {
                     </p>
                   ))}
 
-                  <div className="mt-6 bg-slate-100 rounded-lg px-4 py-3 font-mono text-[11px] text-slate-500 break-all">
+                  {/* MED-4 fix: text-[11px]→text-xs */}
+                  <div className="mt-6 bg-slate-100 rounded-lg px-4 py-3 font-mono text-xs text-slate-500 break-all">
                     QSurface SHA-256: {letter.hash}
                   </div>
                 </div>

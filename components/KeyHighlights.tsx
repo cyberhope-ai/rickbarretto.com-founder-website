@@ -31,7 +31,8 @@ export default function KeyHighlights() {
                 {s.label}
               </div>
               {s.sub && (
-                <div className="font-sans text-[11px] text-slate-500 mt-1">
+                {/* MED-2 fix: text-[11px]→text-xs */}
+                <div className="font-sans text-xs text-slate-500 mt-1">
                   {s.sub}
                 </div>
               )}
