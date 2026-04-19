@@ -120,13 +120,14 @@ export default function Home() {
         {/* Key Highlights */}
         <section className="bg-white border-b border-slate-200 px-6 py-10">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
+            {/* HIGH-1 fix: grid-cols-3→2 at smallest breakpoint so labels aren't cramped; text-[10px]→text-xs */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
               {stats.map((s, i) => (
                 <div key={i} className="text-center py-3">
                   <div className="font-display text-3xl md:text-4xl text-blue-900 leading-none mb-1">
                     {s.value}
                   </div>
-                  <div className="font-sans text-[10px] md:text-xs tracking-wide text-slate-600 uppercase">
+                  <div className="font-sans text-xs tracking-wide text-slate-600 uppercase">
                     {s.label}
                   </div>
                 </div>

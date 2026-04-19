@@ -70,7 +70,8 @@ export default function PressPage() {
         {/* As Seen On — publication wall */}
         <section className="bg-gradient-to-b from-indigo-950 via-blue-950 to-blue-950 text-white px-6 py-10 md:py-12 border-t border-white/5">
           <div className="max-w-6xl mx-auto">
-            <p className="font-sans text-[11px] tracking-[0.35em] uppercase text-sky-300/80 text-center mb-6">
+            {/* HIGH-3 fix: text-[11px]→text-xs ("As seen on" label) */}
+            <p className="font-sans text-xs tracking-[0.35em] uppercase text-sky-300/80 text-center mb-6">
               As seen on
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-5 md:gap-x-10 md:gap-y-6 text-white/90">
@@ -116,14 +117,16 @@ export default function PressPage() {
                       if (items.length === 0) return null;
                       return (
                         <div key={tier}>
-                          <p className="font-sans text-[11px] tracking-widest uppercase text-slate-500 mb-2">
+                          {/* HIGH-3 fix: text-[11px]→text-xs (tier label) */}
+                          <p className="font-sans text-xs tracking-widest uppercase text-slate-500 mb-2">
                             {tierLabel[tier]} · {items.length}
                           </p>
-                          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+                          {/* HIGH-3 fix: grid-cols-1 on mobile so long publication names don't truncate */}
+                          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
                             {items.map((p, i) => {
                               const pill = (
                                 <div
-                                  className={`h-full px-3 py-2.5 rounded-lg text-sm font-sans flex items-start gap-2 leading-snug ${tierColor[p.tier]} ${p.pdfUrl ? "cursor-pointer hover:brightness-110 hover:-translate-y-0.5 transition" : ""}`}
+                                  className={`h-full px-3 py-3 sm:py-2.5 rounded-lg text-sm font-sans flex items-start gap-2 leading-snug ${tierColor[p.tier]} ${p.pdfUrl ? "cursor-pointer hover:brightness-110 hover:-translate-y-0.5 transition" : ""}`}
                                 >
                                   {p.pdfUrl && (
                                     <span className="text-base leading-none mt-0.5 shrink-0" aria-hidden>
@@ -135,7 +138,7 @@ export default function PressPage() {
                                       {p.publication}
                                     </span>
                                     {p.note && (
-                                      <span className="text-[11px] opacity-75 block mt-0.5">
+                                      <span className="text-xs opacity-75 block mt-0.5">
                                         {p.note}
                                       </span>
                                     )}
