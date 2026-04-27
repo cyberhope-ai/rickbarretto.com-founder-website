@@ -1,3 +1,4 @@
+"use client";
 import CompanyCard from "./CompanyCard";
 import type { Company } from "@/content/companies";
 
