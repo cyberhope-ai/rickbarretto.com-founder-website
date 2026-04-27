@@ -21,11 +21,12 @@ const industries = [
 ];
 
 const navLinks = [
-  { href: "/career", label: "Career Timeline", desc: "16 companies · 35 years · interactive timeline" },
-  { href: "/inventions", label: "Inventions", desc: "The pattern: build the platform, invent the uses" },
-  { href: "/skilldna", label: "SkillDNA", desc: "The world's first human potential dashboard" },
-  { href: "/press", label: "Press & Media", desc: "59 press PDFs · 38 videos · national TV" },
-  { href: "/story", label: "The Full Story", desc: "Eight chapters, from Valencia to PrecognitionOS" },
+  { href: "/current-work", label: "Current Work", desc: "CyberHope AI, PrecognitionOS, TLN, HTA, VGP" },
+  { href: "/ventures",     label: "Ventures",      desc: "22+ companies and ventures across 35+ years" },
+  { href: "/career",       label: "Career Timeline", desc: "16 companies · 35 years · interactive timeline" },
+  { href: "/inventions",   label: "Inventions",    desc: "The pattern: build the platform, invent the uses" },
+  { href: "/press",        label: "Media / Press", desc: "59 press PDFs · 38 videos · national TV" },
+  { href: "/story",        label: "Founder Story", desc: "Eight chapters, from Valencia to PrecognitionOS" },
 ];
 
 const stats = [
@@ -207,22 +208,67 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Current Ecosystem */}
+        <section className="bg-slate-50 px-6 py-14 md:py-16 border-t border-slate-200">
+          <div className="max-w-5xl mx-auto">
+            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-2 text-center">Current Ecosystem</p>
+            <h2 className="font-display text-2xl md:text-4xl text-slate-900 text-center leading-tight mb-3">
+              What Rick Is Building Now
+            </h2>
+            <p className="text-center text-slate-600 font-sans mb-10 max-w-2xl mx-auto">
+              Rick&apos;s current work centers on CyberHope AI and PrecognitionOS — governed AI
+              infrastructure for accountable autonomous work — alongside a connected ecosystem.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { name: "CyberHope AI", role: "Current Company", desc: "Developing PrecognitionOS — governed AI infrastructure for the AI-agent economy.", href: "https://cyberhopeai.com", highlight: true },
+                { name: "PrecognitionOS", role: "Flagship Platform", desc: "Governed AI operating layer: attribution, provenance, human review, quality gates, accountable delivery.", href: "https://cyberhopeai.com", highlight: true },
+                { name: "The LAN Network", role: "Implementation Partner", desc: "Human-led AI technology development, cybersecurity, and apprenticeship-enabled delivery.", href: "https://thelannetwork.com", highlight: false },
+                { name: "Hope Training Academy", role: "Training + Apprenticeships", desc: "Training and apprenticeship pathways in technology, IT, cybersecurity, coding, and AI.", href: "https://hopetrainingacademy.org", highlight: false },
+                { name: "Video Game Palooza", role: "Nonprofit Partner", desc: "Nonprofit education and community-impact lineage. 2,000+ Hoosiers trained since 2018.", href: "https://videogamepalooza.org", highlight: false },
+              ].map(e => (
+                <a key={e.name} href={e.href} target="_blank" rel="noopener noreferrer"
+                  className={`group block rounded-xl border p-5 no-underline hover:-translate-y-0.5 hover:shadow-md transition ${e.highlight ? "border-blue-200 bg-blue-50 hover:border-blue-400" : "border-slate-200 bg-white hover:border-blue-300"}`}>
+                  <p className="font-sans text-xs text-blue-700 font-semibold uppercase tracking-wider mb-1">{e.role}</p>
+                  <h3 className="font-display text-xl text-slate-900 mb-2 group-hover:text-blue-900 transition">{e.name}</h3>
+                  <p className="font-sans text-sm text-slate-600 leading-relaxed">{e.desc}</p>
+                </a>
+              ))}
+              <Link href="/current-work"
+                className="group block rounded-xl border border-dashed border-slate-300 bg-white p-5 no-underline hover:border-blue-300 hover:shadow-md hover:-translate-y-0.5 transition flex flex-col justify-center items-center text-center">
+                <p className="font-display text-lg text-slate-600 group-hover:text-blue-900 transition">See Full Ecosystem →</p>
+                <p className="font-sans text-xs text-slate-400 mt-1">Current Work page</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className="bg-gradient-to-b from-indigo-950 to-blue-950 text-blue-200 px-6 py-16 text-center">
           <p className="font-display text-2xl text-white mb-3">
-            The story isn&rsquo;t over.
+            Governed AI for the Real World
           </p>
-          <p className="font-sans max-w-xl mx-auto mb-8">
-            Rick Barretto is currently founder and CEO of{" "}
-            <a
-              href="https://cyberhopeai.com"
-              className="text-sky-300 hover:text-sky-200 underline underline-offset-4"
-            >
-              CyberHope AI
-            </a>
-            , building PrecognitionOS — the first operating system for governed
-            artificial intelligence.
+          <p className="font-sans max-w-2xl mx-auto mb-6 text-sky-100 leading-relaxed">
+            Rick&apos;s current work continues through{" "}
+            <a href="https://cyberhopeai.com" className="text-sky-300 hover:text-sky-200 underline underline-offset-4">CyberHope AI</a>{" "}
+            and PrecognitionOS, focused on making AI-agent work more attributable, reviewable,
+            secure, and accountable.
           </p>
+          <a href="https://cyberhopeai.com" target="_blank" rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-sky-400 text-blue-950 rounded-lg font-bold text-sm hover:bg-sky-300 transition no-underline mb-10">
+            Visit CyberHope AI →
+          </a>
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-1 mb-6 text-xs">
+            <a href="https://cyberhopeai.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-sky-300 no-underline">CyberHope AI</a>
+            <span className="text-blue-800">·</span>
+            <a href="https://thelannetwork.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-sky-300 no-underline">The LAN Network</a>
+            <span className="text-blue-800">·</span>
+            <a href="https://hopetrainingacademy.org" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-sky-300 no-underline">Hope Training Academy</a>
+            <span className="text-blue-800">·</span>
+            <a href="https://videogamepalooza.org" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-sky-300 no-underline">Video Game Palooza</a>
+            <span className="text-blue-800">·</span>
+            <Link href="/contact" className="text-blue-400 hover:text-sky-300 no-underline">Contact</Link>
+          </div>
           <p className="text-xs tracking-widest uppercase text-blue-400/60">
             © {new Date().getFullYear()} Rick Barretto · Indianapolis, IN
           </p>
