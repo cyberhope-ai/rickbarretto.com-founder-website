@@ -270,7 +270,7 @@ export default function SkillDNAPage() {
                 Evidence-backed and yours to keep for life.
               </p>
               <p className="text-sm font-sans text-slate-500 italic">
-                Signup coming soon.
+                Early access available. Contact rick@cyberhopeai.com to join the pilot cohort.
               </p>
             </div>
             <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
