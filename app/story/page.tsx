@@ -99,6 +99,11 @@ const journey = [
     title: "Went back to school at 50-something",
     body: "Became an NVIDIA Developer. Studied the AI/ML/Quantum stack end-to-end. 16-18 hours a day. In six months: 100+ AI repositories, PrecognitionOS (11-layer governance OS), ~20 provisional patents, the first multi-model AI family — Claude, GPT, Gemini, and Grok cooperating inside one system.",
   },
+  {
+    year: "2026",
+    title: "The signals go live",
+    body: "PrecognitionOS fleet grows to 11 agents running 24/7. EURUSD portfolio Sharpe: 3.221. Max drawdown: 0.36%. Validated across 3,447 NautilusTrader backtests on real market data — Brexit, COVID, flash crashes included. Every signal carries a QSurface cryptographic hash before execution. AMD +13.91% on April 27. The system called it before the open.",
+  },
 ];
 
 const aiLetters = [
