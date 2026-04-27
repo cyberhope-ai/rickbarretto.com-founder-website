@@ -1,194 +1,232 @@
-import Link from "next/link";
-import type { Metadata } from "next";
 import Nav from "@/components/Nav";
-
-export const metadata: Metadata = {
-  title: "Rick Barretto — Inventor, Founder, Platform Builder",
-  description: "For more than three decades, Rick Barretto has built companies, platforms, and training systems across medical technology, entertainment, esports, workforce development, cybersecurity, and artificial intelligence.",
-};
-
-const ecosystem = [
-  {
-    name: "CyberHope AI",
-    role: "Current Company",
-    desc: "Company developing governed AI infrastructure for the AI-agent economy.",
-    cta: { label: "Visit CyberHopeAI.com", href: "https://cyberhopeai.com", external: true },
-    highlight: true,
-  },
-  {
-    name: "PrecognitionOS",
-    role: "Flagship Platform",
-    desc: "Governed AI operating layer created to support attribution, provenance, human review, quality gates, and accountable autonomous work.",
-    cta: { label: "Learn More at CyberHopeAI.com", href: "https://cyberhopeai.com", external: true },
-    highlight: true,
-  },
-  {
-    name: "The LAN Network",
-    role: "Licensed Implementation Partner",
-    desc: "Human-led AI technology development, cybersecurity, and apprenticeship-enabled delivery partner rooted in esports and technology training.",
-    cta: { label: "Visit TheLANNetwork.com", href: "https://thelannetwork.com", external: true },
-    highlight: false,
-  },
-  {
-    name: "Hope Training Academy",
-    role: "Training + Apprenticeship Pathway",
-    desc: "Training and apprenticeship pathway for technology, cybersecurity, IT, and AI education.",
-    cta: { label: "Visit HopeTrainingAcademy.org", href: "https://hopetrainingacademy.org", external: true },
-    highlight: false,
-  },
-  {
-    name: "Video Game Palooza",
-    role: "Nonprofit Partner",
-    desc: "Nonprofit education and community-impact lineage connecting games, technology, and youth opportunity. 2,000+ Hoosiers trained since 2018.",
-    cta: { label: "Visit VideoGamePalooza.org", href: "https://videogamepalooza.org", external: true },
-    highlight: false,
-  },
-  {
-    name: "TLN Esports Archive",
-    role: "Heritage",
-    desc: "The original TLN esports site — origin story of the training house where Tyler 'Ninja' Blevins and others trained.",
-    cta: { label: "Visit Archive", href: "https://esports.thelannetwork.com", external: true },
-    highlight: false,
-  },
-];
+import Lightbox from "@/components/Lightbox";
+import { keyHighlights } from "@/content/companies";
+import Link from "next/link";
 
 const industries = [
-  "Medical Documentation Technology",
-  "Location-Based Entertainment",
-  "Esports Training + Operations",
-  "Youth Technology Education",
-  "Cybersecurity",
-  "Workforce Development",
-  "AI Governance + Infrastructure",
-  "Nonprofit / 501(c)(3)",
-  "Cloud / Enterprise Architecture",
-  "TV / Broadcast",
-  "AR / VR / Virtual Reality",
-  "Global Licensing",
+  { icon: "🎮", name: "Video Game Industry" },
+  { icon: "🏛️", name: "Nonprofit / 501(c)(3)" },
+  { icon: "🎓", name: "Education / Training Academy" },
+  { icon: "🏥", name: "Hospital / Medical IT" },
+  { icon: "📺", name: "TV / Broadcast" },
+  { icon: "🎬", name: "Post Production / VFX" },
+  { icon: "🎲", name: "3D Game Development" },
+  { icon: "🥽", name: "AR / VR / Virtual Reality" },
+  { icon: "🖨️", name: "Printing / Web-to-Print" },
+  { icon: "📖", name: "Publishing (Book)" },
+  { icon: "⚖️", name: "Law Enforcement Technology" },
+  { icon: "🧙", name: "Global Licensing (Warner Bros.)" },
+  { icon: "☁️", name: "Cloud / Enterprise Architecture" },
+  { icon: "🤖", name: "AI Governance / Infrastructure" },
+];
+
+const navLinks = [
+  { href: "/career", label: "Career Timeline", desc: "16 companies · 35 years · interactive timeline" },
+  { href: "/inventions", label: "Inventions", desc: "The pattern: build the platform, invent the uses" },
+  { href: "/skilldna", label: "SkillDNA", desc: "The world's first human potential dashboard" },
+  { href: "/press", label: "Press & Media", desc: "59 press PDFs · 38 videos · national TV" },
+  { href: "/story", label: "The Full Story", desc: "Eight chapters, from Valencia to PrecognitionOS" },
+];
+
+const stats = [
+  { value: keyHighlights.companies, label: "Companies" },
+  { value: keyHighlights.firstInCategory, label: "First-in-Category" },
+  { value: keyHighlights.patentsDrafted, label: "Patents Drafted" },
+  { value: keyHighlights.yearsBuilding, label: "Years Building" },
+  { value: keyHighlights.acquisitions, label: "M&A Exits" },
+  { value: keyHighlights.studentsTrained, label: "Hoosiers Trained" },
 ];
 
 export default function Home() {
   return (
     <>
       <Nav active="/" />
-      <main>
-        {/* Hero */}
-        <section className="max-w-5xl mx-auto px-6 pt-20 pb-16">
-          <p className="text-blue-800 text-xs font-semibold uppercase tracking-widest mb-4">
-            Inventor · Founder · Platform Builder
-          </p>
-          <h1 className="font-display text-5xl md:text-6xl tracking-tight text-slate-900 leading-tight mb-6">
-            Rick Barretto: Inventor, Founder, Platform Builder
-          </h1>
-          <p className="text-xl text-slate-700 mb-4 leading-relaxed max-w-3xl">
-            For more than three decades, Rick Barretto has built companies, platforms, and training
-            systems across medical technology, entertainment, esports, workforce development,
-            cybersecurity, and artificial intelligence.
-          </p>
-          <p className="text-slate-600 mb-8 leading-relaxed max-w-3xl">
-            Today, Rick&apos;s work centers on CyberHope AI and PrecognitionOS, a governed AI
-            infrastructure platform designed to help human-led teams coordinate AI agents with
-            attribution, review, provenance, and accountability.
-          </p>
-          <div className="flex gap-4 flex-wrap">
-            <Link href="/current-work" className="inline-block px-6 py-3 bg-blue-900 text-white rounded-lg font-semibold text-sm hover:bg-blue-800 transition no-underline">
-              Explore Current Work →
-            </Link>
-            <Link href="/career" className="inline-block px-6 py-3 border border-slate-300 text-slate-700 rounded-lg font-semibold text-sm hover:border-blue-900 hover:text-blue-900 transition no-underline">
-              View Career Timeline
-            </Link>
-          </div>
-        </section>
+      <main className="min-h-screen">
+        {/* Hero — Name, title, open letter, and the polo/desk photo */}
+        <section className="bg-gradient-to-b from-blue-950 via-blue-900 to-indigo-950 text-white">
+          <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+            <div className="text-center mb-10 md:mb-14">
+              <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-sky-300 mb-4">
+                The Founder Site of
+              </p>
+              <h1 className="font-display text-5xl md:text-7xl leading-[1.02] tracking-tight mb-5">
+                Rick Barretto
+              </h1>
+              <p className="font-display italic text-xl md:text-2xl text-sky-200 max-w-3xl mx-auto leading-snug">
+                Dreamer. Inventor. Founder. A 35-year serial-entrepreneur story &mdash;
+                 16 companies, 8 first-in-category, 14 industries, no VC.
+              </p>
+            </div>
 
-        {/* Current Work */}
-        <section className="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
-          <p className="text-blue-800 text-xs font-semibold uppercase tracking-widest mb-2">Current Work</p>
-          <h2 className="font-display text-3xl text-slate-900 mb-3">Governed AI for the Real World</h2>
-          <p className="text-slate-600 mb-4 leading-relaxed max-w-3xl">
-            Rick&apos;s current focus is CyberHope AI, the company developing PrecognitionOS: governed
-            AI infrastructure for accountable autonomous work. The platform is designed to help
-            organizations move beyond experimental AI usage toward human-led, evidence-ready
-            AI-agent workflows.
-          </p>
-          <p className="text-slate-600 mb-6 leading-relaxed max-w-3xl">
-            CyberHope AI is being built alongside a broader ecosystem that includes The LAN Network,
-            Hope Training Academy, and Video Game Palooza, connecting AI infrastructure, real-world
-            development, workforce training, and community impact.
-          </p>
-          <a href="https://cyberhopeai.com" target="_blank" rel="noopener noreferrer"
-            className="inline-block px-5 py-2.5 bg-blue-900 text-white rounded-lg font-semibold text-sm hover:bg-blue-800 transition no-underline">
-            Visit CyberHope AI →
-          </a>
-        </section>
-
-        {/* Career Pattern */}
-        <section className="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
-          <div className="border-l-4 border-blue-900 pl-6 max-w-3xl">
-            <h2 className="font-display text-3xl text-slate-900 mb-4">
-              One Career Pattern: Build the Platform, Then Train People to Use It
-            </h2>
-            <p className="text-slate-600 leading-relaxed mb-4">
-              Across multiple industries, Rick&apos;s work has followed a consistent pattern: identify
-              an emerging technology shift, build a practical platform around it, and create pathways
-              for people to participate.
-            </p>
-            <p className="text-slate-600 leading-relaxed mb-6">
-              From early medical documentation systems to location-based entertainment, from esports
-              training houses to youth technology education, from cybersecurity apprenticeships to
-              governed AI infrastructure, the through-line is the same: platforms, people, and
-              practical adoption.
-            </p>
-            <Link href="/career" className="text-blue-900 font-semibold text-sm hover:underline no-underline">
-              View the Full Career Timeline →
-            </Link>
-          </div>
-        </section>
-
-        {/* Ecosystem */}
-        <section className="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
-          <p className="text-blue-800 text-xs font-semibold uppercase tracking-widest mb-2">Ecosystem</p>
-          <h2 className="font-display text-3xl text-slate-900 mb-10">Current Ecosystem</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {ecosystem.map(e => (
-              <div key={e.name} className={`rounded-xl border p-5 flex flex-col ${e.highlight ? "border-blue-200 bg-blue-50" : "border-slate-200 bg-white"}`}>
-                <p className="text-blue-800 text-xs font-semibold uppercase tracking-wider mb-1">{e.role}</p>
-                <h3 className="font-display text-xl text-slate-900 mb-2">{e.name}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed flex-1 mb-4">{e.desc}</p>
-                <a href={e.cta.href} target="_blank" rel="noopener noreferrer"
-                  className="text-blue-900 font-semibold text-xs hover:underline no-underline">
-                  {e.cta.label} →
-                </a>
+            <div className="grid md:grid-cols-[5fr_6fr] gap-8 md:gap-12 items-center">
+              <div className="mx-auto md:mx-0 w-full max-w-md">
+                <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+                  <Lightbox
+                    src="/photos/rick-cyberhope-polo-office.jpg"
+                    alt="Rick Barretto"
+                    thumbClassName="w-full h-auto"
+                  />
+                </div>
               </div>
-            ))}
+
+              <div className="font-sans text-base md:text-lg text-sky-100 leading-relaxed space-y-4">
+                <p className="font-sans text-xs tracking-widest uppercase text-sky-300 mb-1">
+                  An open letter
+                </p>
+                <p>
+                  Welcome! This site is a working archive of a career spent
+                  building things that had never existed &mdash; other than
+                  in my imagination &mdash; driven by a desire to create
+                  platforms and systems that help people lead happy,
+                  fulfilled lives.
+                </p>
+                <p>
+                  Everything you&rsquo;ll see here &mdash; the companies, the
+                  inventions, the press, the SkillDNA &mdash; came out of a
+                  simple belief that if you see a need and can create
+                  something that solves a problem before anyone else, build
+                  the platform that makes it possible, and let the uses
+                  invent themselves.
+                </p>
+                <p>
+                  My hope is that some small piece of this life&rsquo;s work
+                  is inspiring, interesting, or useful to you &mdash; that it
+                  sparks an idea, validates a hunch, or reminds you that you
+                  don&rsquo;t need permission to build what you can already
+                  see.
+                </p>
+                <p>Perhaps James Michener said it best:</p>
+                <blockquote className="border-l-2 border-sky-400/40 pl-4 italic text-sky-200/90 text-[0.95em] leading-relaxed">
+                  &ldquo;The master in the art of living makes little
+                  distinction between his work and his play, his labor and
+                  his leisure, his mind and his body, his information and
+                  his recreation, his love and his religion. He hardly knows
+                  which is which. He simply pursues his vision of excellence
+                  at whatever he does, leaving others to decide whether he
+                  is working or playing. To him he&rsquo;s always doing
+                  both.&rdquo;
+                  <footer className="not-italic text-xs tracking-wide text-sky-300/80 mt-2">
+                    &mdash; James Michener
+                  </footer>
+                </blockquote>
+                <p className="font-display italic text-sky-200 pt-1">
+                  &mdash; Rick
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Industries */}
-        <section className="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
-          <p className="text-blue-800 text-xs font-semibold uppercase tracking-widest mb-2">Career Span</p>
-          <h2 className="font-display text-3xl text-slate-900 mb-8">Industries Across 35+ Years</h2>
-          <div className="flex flex-wrap gap-2">
-            {industries.map(i => (
-              <span key={i} className="px-3 py-1.5 bg-slate-100 text-slate-700 text-sm rounded-full font-medium border border-slate-200">
-                {i}
-              </span>
-            ))}
-          </div>
-          <div className="mt-6">
-            <Link href="/career" className="text-blue-900 font-semibold text-sm hover:underline no-underline">
-              Explore the Full Career Timeline →
-            </Link>
+        {/* Key Highlights */}
+        <section className="bg-white border-b border-slate-200 px-6 py-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
+              {stats.map((s, i) => (
+                <div key={i} className="text-center py-3">
+                  <div className="font-display text-3xl md:text-4xl text-blue-900 leading-none mb-1">
+                    {s.value}
+                  </div>
+                  <div className="font-sans text-[10px] md:text-xs tracking-wide text-slate-600 uppercase">
+                    {s.label}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* Footer disclaimer */}
-        <section className="max-w-5xl mx-auto px-6 py-10 border-t border-slate-200">
-          <p className="text-slate-400 text-xs leading-relaxed max-w-3xl">
-            RickBarretto.com describes Rick Barretto&apos;s career, ventures, inventions, and current
-            ecosystem. Product, investor, and technical details for CyberHope AI and PrecognitionOS
-            are maintained on CyberHopeAI.com and related official company materials.
+        {/* Industries — the breadth */}
+        <section className="bg-slate-50 px-6 py-14 md:py-16 border-b border-slate-200">
+          <div className="max-w-6xl mx-auto">
+            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-2 text-center">
+              Innovation across 14 industries
+            </p>
+            <h2 className="font-display text-2xl md:text-4xl text-slate-900 text-center leading-tight mb-8">
+              Not one industry. All of them.
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
+              {industries.map((ind, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-xl border border-slate-200 p-3 md:p-4 text-center hover:border-blue-300 hover:shadow-sm transition"
+                >
+                  <div className="text-2xl mb-1">{ind.icon}</div>
+                  <p className="font-sans text-xs md:text-sm text-slate-800 leading-tight font-medium">
+                    {ind.name}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Evolution — strategic timeline image */}
+        <section className="bg-gradient-to-b from-blue-950 via-indigo-950 to-blue-950 px-6 py-14 md:py-16">
+          <div className="max-w-5xl mx-auto">
+            <p className="font-sans text-xs tracking-widest uppercase text-sky-300 mb-3 text-center">
+              The Evolution
+            </p>
+            <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+              <Lightbox
+                src="/photos/evolution-timeline.png"
+                alt="The Evolution: From Esports to AI Infrastructure — This Isn't a Pivot, It's the Culmination of a Proven Strategy"
+                thumbClassName="w-full h-auto"
+              />
+            </div>
+            <p className="text-center mt-6 font-sans text-sm text-sky-300/70">
+              Click to enlarge
+            </p>
+          </div>
+        </section>
+
+        {/* Explore — navigation cards */}
+        <section className="bg-white px-6 py-14 md:py-16">
+          <div className="max-w-5xl mx-auto">
+            <p className="font-sans text-xs tracking-widest uppercase text-blue-700 mb-2 text-center">
+              Explore
+            </p>
+            <h2 className="font-display text-2xl md:text-4xl text-slate-900 text-center leading-tight mb-10">
+              Dive deeper.
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="group block bg-slate-50 rounded-xl border border-slate-200 p-6 hover:border-blue-300 hover:shadow-md hover:-translate-y-0.5 transition"
+                >
+                  <h3 className="font-display text-xl text-slate-900 mb-1 group-hover:text-blue-900 transition">
+                    {link.label}
+                  </h3>
+                  <p className="font-sans text-sm text-slate-600">
+                    {link.desc}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="bg-gradient-to-b from-indigo-950 to-blue-950 text-blue-200 px-6 py-16 text-center">
+          <p className="font-display text-2xl text-white mb-3">
+            The story isn&rsquo;t over.
           </p>
-        </section>
+          <p className="font-sans max-w-xl mx-auto mb-8">
+            Rick Barretto is currently founder and CEO of{" "}
+            <a
+              href="https://cyberhopeai.com"
+              className="text-sky-300 hover:text-sky-200 underline underline-offset-4"
+            >
+              CyberHope AI
+            </a>
+            , building PrecognitionOS — the first operating system for governed
+            artificial intelligence.
+          </p>
+          <p className="text-xs tracking-widest uppercase text-blue-400/60">
+            © {new Date().getFullYear()} Rick Barretto · Indianapolis, IN
+          </p>
+        </footer>
       </main>
     </>
   );

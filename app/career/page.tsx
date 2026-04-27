@@ -6,9 +6,9 @@ import Timeline from "@/components/Timeline";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Career Timeline | Rick Barretto",
+  title: "Career — Rick Barretto",
   description:
-    "A timeline of companies, inventions, platforms, and training systems built across technology shifts — from medical documentation to governed AI infrastructure.",
+    "35 years, 22 companies, 8 first-in-category inventions. A visual timeline from medical informatics to AI governance.",
 };
 
 export default function CareerPage() {
@@ -20,21 +20,17 @@ export default function CareerPage() {
         <section className="bg-gradient-to-b from-blue-950 via-blue-900 to-indigo-900 text-white px-6 py-16 md:py-24">
           <div className="max-w-6xl mx-auto">
             <p className="font-sans text-xs tracking-widest uppercase text-sky-300 mb-3">
-              Career Timeline
+              Work Experience
             </p>
             <h1 className="font-display text-4xl md:text-6xl leading-tight mb-4">
-              35 years. 22+ companies. 8 first-in-category inventions.
+              35 years. 22 companies. 8 first-in-category inventions.
             </h1>
-            <p className="font-sans text-lg md:text-xl text-sky-100 max-w-3xl leading-relaxed mb-4">
-              A timeline of companies, inventions, platforms, and training systems
-              built across technology shifts — from medical documentation and
-              location-based entertainment, through esports, education, and
-              cybersecurity, to governed AI infrastructure.
-            </p>
-            <p className="font-sans text-sm text-sky-300 max-w-3xl leading-relaxed">
-              Rick Barretto&apos;s career has followed one consistent pattern:
-              identify an emerging technology shift, build a practical platform
-              around it, and create pathways for people to participate.
+            <p className="font-sans text-lg md:text-xl text-sky-100 max-w-3xl leading-relaxed">
+              From medical dictation systems to the world&rsquo;s first
+              multi-game arcade, from an esports bootcamp house to the first
+              AI-governance operating system — a career spent turning dreams
+              into reality, mostly without investors and almost always without
+              permission.
             </p>
           </div>
         </section>
@@ -96,27 +92,23 @@ export default function CareerPage() {
           </div>
         </section>
 
-        {/* Next Chapter CTA */}
+        {/* Footer */}
         <footer className="bg-gradient-to-b from-indigo-950 to-blue-950 text-blue-200 px-6 py-16 text-center">
-          <p className="font-sans text-xs tracking-widest uppercase text-sky-300 mb-3">
-            The Next Chapter
+          <p className="font-display text-2xl text-white mb-3">
+            The story isn&rsquo;t over.
           </p>
-          <p className="font-display text-3xl text-white mb-4">
-            Governed AI Infrastructure
-          </p>
-          <p className="font-sans max-w-2xl mx-auto mb-8 text-sky-100 leading-relaxed">
-            Rick&apos;s current work continues through{" "}
-            <a href="https://cyberhopeai.com" className="text-sky-300 hover:text-sky-200 underline underline-offset-4">
+          <p className="font-sans max-w-xl mx-auto mb-8">
+            Currently founder and CEO of{" "}
+            <a
+              href="https://cyberhopeai.com"
+              className="text-sky-300 hover:text-sky-200 underline underline-offset-4"
+            >
               CyberHope AI
-            </a>{" "}
-            and PrecognitionOS, focused on making AI-agent work more
-            attributable, reviewable, secure, and accountable.
+            </a>
+            , building PrecognitionOS — the first operating system for
+            governed artificial intelligence.
           </p>
-          <a href="https://cyberhopeai.com" target="_blank" rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-sky-400 text-blue-950 rounded-lg font-bold text-sm hover:bg-sky-300 transition no-underline mb-8">
-            Visit CyberHope AI →
-          </a>
-          <p className="text-xs tracking-widest uppercase text-blue-400/60 mt-6">
+          <p className="text-xs tracking-widest uppercase text-blue-400/60">
             © {new Date().getFullYear()} Rick Barretto · Indianapolis, IN
           </p>
         </footer>
