@@ -22,7 +22,6 @@ const industries = [
 
 const navLinks = [
   { href: "/current-work", label: "Current Work", desc: "CyberHope AI, PrecognitionOS, TLN, HTA, VGP" },
-  { href: "/ventures",     label: "Ventures",      desc: "22+ companies and ventures across 35+ years" },
   { href: "/career",       label: "Career Timeline", desc: "16 companies · 35 years · interactive timeline" },
   { href: "/inventions",   label: "Inventions",    desc: "The pattern: build the platform, invent the uses" },
   { href: "/press",        label: "Media / Press", desc: "59 press PDFs · 38 videos · national TV" },

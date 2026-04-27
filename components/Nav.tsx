@@ -4,7 +4,6 @@ export const navItems = [
   { href: "/",              label: "Home" },
   { href: "/career",        label: "Career Timeline" },
   { href: "/current-work",  label: "Current Work" },
-  { href: "/ventures",      label: "Ventures" },
   { href: "/inventions",    label: "Inventions" },
   { href: "/story",         label: "Founder Story" },
   { href: "/press",         label: "Media / Press" },
